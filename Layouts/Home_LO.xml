@@ -4,8 +4,8 @@
     <sid>697007557213966</sid>
     <event-sheet>Home_ES</event-sheet>
     <size>
-        <width>1708</width>
-        <height>960</height>
+        <width>1920</width>
+        <height>1080</height>
     </size>
     <margins>
         <horizontal>500</horizontal>
@@ -39,11 +39,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>851</x>
-                        <y>485</y>
+                        <x>961.559631348</x>
+                        <y>541.598937988</y>
                         <z>0</z>
-                        <width>1722.880737305</width>
-                        <height>973.802124023</height>
+                        <width>1944</width>
+                        <height>1087</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>

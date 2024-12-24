@@ -54,11 +54,11 @@
     </object-folder>
     <families />
     <layout-folder>
-        <layout>Layout 1.xml</layout>
+        <layout>Game.xml</layout>
         <layout>Home_LO.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Game.xml</event-sheet>
         <event-sheet>Home_ES.xml</event-sheet>
     </event-folder>
     <global-instances />

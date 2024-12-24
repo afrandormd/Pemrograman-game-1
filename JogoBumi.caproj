@@ -9,7 +9,10 @@
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>2m2oqhlgof90t</unique-id>
     <saved-with-version>26200</saved-with-version>
-    <used-plugins />
+    <used-plugins>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
     <used-behaviors />
     <used-effects />
     <configurations>
@@ -35,7 +38,20 @@
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
-    <object-folder />
+    <object-folder>
+        <object-type name="BGMenu" sid="862227024861403">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\Penyimpanan Utama\Downloads\Download From Ms.edge\Home Screen (1).png" />
+        </object-type>
+        <object-type name="HomeScreen" sid="365012556636011">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="389440322875801" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Penyimpanan Utama\Downloads\Download From Ms.edge\Home Screen (1).png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
     <families />
     <layout-folder>
         <layout>Layout 1.xml</layout>

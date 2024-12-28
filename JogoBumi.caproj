@@ -10,11 +10,14 @@
     <unique-id>2m2oqhlgof90t</unique-id>
     <saved-with-version>26200</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
     </used-behaviors>
     <used-effects />
@@ -200,6 +203,177 @@
                 </animation-folder>
             </object-type>
         </object-folder>
+        <object-folder name="GameEasyAsset">
+            <object-type name="BG_Game_Easy" sid="832834989485699">
+                <plugin id="TiledBg" />
+                <texture original-source="D:\Penyimpanan Utama\Downloads\Download From Ms.edge\bg-easy-game (1).png" />
+            </object-type>
+            <object-type name="TSAnorganikEasy" sid="670405771874702">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="905757756050551" speed="5">
+                        <frame duration="1" hotspotX="0.501424" hotspotY="0.5" original-source="D:\Penyimpanan Utama\Downloads\Download From Ms.edge\kotak-sampah-anorganik.png">
+                            <collision-poly>
+                                <point x="0.0655271" y="0.046" />
+                                <point x="0.498576" y="0" />
+                                <point x="0.934473" y="0.046" />
+                                <point x="0.91453" y="0.5" />
+                                <point x="0.957265" y="0.97" />
+                                <point x="0.0911681" y="0.936" />
+                                <point x="0.131054" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TSOrganikEasy" sid="912420313054602">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="652886981515859" speed="5">
+                        <frame duration="1" hotspotX="0.501424" hotspotY="0.5" original-source="D:\Penyimpanan Utama\Downloads\Download From Ms.edge\kotak-sampah-organik.png">
+                            <collision-poly>
+                                <point x="0.0655271" y="0.046" />
+                                <point x="0.498576" y="0" />
+                                <point x="0.934473" y="0.046" />
+                                <point x="0.91453" y="0.5" />
+                                <point x="0.957265" y="0.97" />
+                                <point x="0.0911681" y="0.936" />
+                                <point x="0.131054" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="SAnorganikEasy" sid="310296703458190">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="DragDrop" sid="275784680638207">
+                        <behavior id="DragnDrop" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="195501418396301" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.505376" original-source="D:\Penyimpanan Utama\Kuliah\Semester 5\Pemrograman Game 1\Project Game\Assets\Assets Topik 2\NonOrganik1.png">
+                            <collision-poly>
+                                <point x="0.130769" y="0.182796" />
+                                <point x="0.5" y="0.0537634" />
+                                <point x="0.853846" y="0.204301" />
+                                <point x="0.992308" y="0.494624" />
+                                <point x="0.876923" y="0.827957" />
+                                <point x="0.5" y="0.989247" />
+                                <point x="0.184615" y="0.741935" />
+                                <point x="0.1" y="0.494624" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.505618" original-source="D:\Penyimpanan Utama\Kuliah\Semester 5\Pemrograman Game 1\Project Game\Assets\Assets Topik 2\NonOrganik2.png">
+                            <collision-poly>
+                                <point x="0.0517241" y="0.0674157" />
+                                <point x="0.741379" y="0.337079" />
+                                <point x="0.991379" y="0.494382" />
+                                <point x="0.896552" y="0.865169" />
+                                <point x="0.5" y="0.966292" />
+                                <point x="0.163793" y="0.786517" />
+                                <point x="0.00862069" y="0.494382" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="PosEasy_1" sid="836273201411485">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="DragDrop" sid="617686533040860">
+                        <behavior id="DragnDrop" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="518322601634283" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="PosEasy_2" sid="771816741578639">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="DragDrop" sid="521444958326153">
+                        <behavior id="DragnDrop" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="927153173002886" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="PosEasy_3" sid="193729101632350">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="DragDrop" sid="476902085317280">
+                        <behavior id="DragnDrop" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="488049232104926" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="PosEasy_4" sid="313458397955541">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="DragDrop" sid="312396638754971">
+                        <behavior id="DragnDrop" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="907677206908993" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TxSelesaiEasy" sid="565109458426110">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Function" sid="809153012754628">
+                <plugin id="Function" />
+            </object-type>
+            <object-type name="SOrganikEasy" sid="106300570694638">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="DragDrop" sid="423758575612927">
+                        <behavior id="DragnDrop" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="800284297183237" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.505263" original-source="D:\Penyimpanan Utama\Kuliah\Semester 5\Pemrograman Game 1\Project Game\Assets\Assets Topik 2\Organik1.png">
+                            <collision-poly>
+                                <point x="0.162162" y="0.126316" />
+                                <point x="0.5" y="0.0842105" />
+                                <point x="0.77027" y="0.178947" />
+                                <point x="0.689189" y="0.494737" />
+                                <point x="0.891892" y="0.915789" />
+                                <point x="0.5" y="0.989474" />
+                                <point x="0.202703" y="0.842105" />
+                                <point x="0.310811" y="0.494737" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504425" hotspotY="0.5" original-source="D:\Penyimpanan Utama\Kuliah\Semester 5\Pemrograman Game 1\Project Game\Assets\Assets Topik 2\Organik2.png">
+                            <collision-poly>
+                                <point x="0.221239" y="0.304878" />
+                                <point x="0.495575" y="0.0609756" />
+                                <point x="0.893805" y="0.146341" />
+                                <point x="0.460177" y="0.5" />
+                                <point x="0.911504" y="0.878049" />
+                                <point x="0.495575" y="0.878049" />
+                                <point x="0.176991" y="0.756098" />
+                                <point x="0.0530973" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
         <object-type name="TbPlay" sid="762587376853102">
             <plugin id="Sprite" />
             <animation-folder>
@@ -214,11 +388,11 @@
     </object-folder>
     <families />
     <layout-folder>
-        <layout>Game.xml</layout>
+        <layout>Game_Easy_LO.xml</layout>
         <layout>Home_LO.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Game.xml</event-sheet>
+        <event-sheet>Game_Easy_ES.xml</event-sheet>
         <event-sheet>Home_ES.xml</event-sheet>
     </event-folder>
     <global-instances>
@@ -227,6 +401,7 @@
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
+        <global-instance type="Function" uid="20" />
     </global-instances>
     <sounds-folder />
     <music-folder />

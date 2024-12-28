@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Game_Easy_ES</name>
+    <events>
+        <variable constant="0" name="countSampahEasy" sid="198933550858631" static="0" type="number">0</variable>
+        <variable constant="0" name="lastPosY_Easy" sid="662369252003613" static="0" type="number">0</variable>
+        <variable constant="0" name="lastPosX_Easy" sid="460722436878696" static="0" type="number">0</variable>
+        <event-block sid="208727227099278">
+            <conditions>
+                <condition id="0" name="On function" sid="817029849275447" type="Function">
+                    <param id="0" name="Name">&quot;init_easy&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="842724645436993" type="System">
+                    <param id="0" name="Object to create">SAnorganikEasy</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">PosEasy_1.X</param>
+                    <param id="3" name="Y">PosEasy_1.Y</param>
+                </action>
+                <action id="-3" name="Create object" sid="812505081261159" type="System">
+                    <param id="0" name="Object to create">SOrganikEasy</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">PosEasy_2.X</param>
+                    <param id="3" name="Y">PosEasy_2.Y</param>
+                </action>
+                <action id="-3" name="Create object" sid="727660766306265" type="System">
+                    <param id="0" name="Object to create">SAnorganikEasy</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">PosEasy_3.X</param>
+                    <param id="3" name="Y">PosEasy_3.Y</param>
+                </action>
+                <action id="-3" name="Create object" sid="845374975013978" type="System">
+                    <param id="0" name="Object to create">SOrganikEasy</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">PosEasy_4.X</param>
+                    <param id="3" name="Y">PosEasy_4.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="715468962506060">
+            <conditions>
+                <condition id="-18" name="On created" sid="166428487928011" type="SAnorganikEasy" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="761412086415603" type="SAnorganikEasy">
+                    <param id="0" name="Frame number">int(random(0,2))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="603310216016533">
+            <conditions>
+                <condition id="-18" name="On created" sid="289129061861908" type="SOrganikEasy" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="104180159608334" type="SOrganikEasy">
+                    <param id="0" name="Frame number">int(random(0,2))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="913085469828110">
+            <conditions>
+                <condition behavior="DragDrop" id="1" name="On drag start" sid="954469527819824" type="SAnorganikEasy" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="744974111611564" type="System">
+                    <param id="0" name="Variable">lastPosX_Easy</param>
+                    <param id="1" name="Value">SAnorganikEasy.X</param>
+                </action>
+                <action id="-9" name="Set value" sid="372737926374076" type="System">
+                    <param id="0" name="Variable">lastPosY_Easy</param>
+                    <param id="1" name="Value">SAnorganikEasy.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="684972871942016">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="187622964717685" type="SAnorganikEasy" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="571664230144100">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="566122575941071" type="SAnorganikEasy">
+                            <param id="0" name="Object">TSAnorganikEasy</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="111184261114539" type="SAnorganikEasy" />
+                        <action id="-10" name="Add to" sid="576783877721248" type="System">
+                            <param id="0" name="Variable">countSampahEasy</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                        <action id="0" name="Call function" sid="743215730862723" type="Function">
+                            <param id="0" name="Name">&quot;selesai_easy&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="494246062713287">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="811797237772010" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="474676652699411" type="SAnorganikEasy">
+                            <param id="0" name="X">lastPosX_Easy</param>
+                            <param id="1" name="Y">lastPosY_Easy</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="368621180314966">
+            <conditions>
+                <condition behavior="DragDrop" id="1" name="On drag start" sid="458051749964982" type="SOrganikEasy" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="309053702821645" type="System">
+                    <param id="0" name="Variable">lastPosX_Easy</param>
+                    <param id="1" name="Value">SOrganikEasy.X</param>
+                </action>
+                <action id="-9" name="Set value" sid="878711636371318" type="System">
+                    <param id="0" name="Variable">lastPosY_Easy</param>
+                    <param id="1" name="Value">SOrganikEasy.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="335549755875462">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="255856273269408" type="SOrganikEasy" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="418944123153270">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="236108304047517" type="SOrganikEasy">
+                            <param id="0" name="Object">TSOrganikEasy</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="913248224053963" type="SOrganikEasy" />
+                        <action id="-10" name="Add to" sid="647868277875765" type="System">
+                            <param id="0" name="Variable">countSampahEasy</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                        <action id="0" name="Call function" sid="965854628238563" type="Function">
+                            <param id="0" name="Name">&quot;selesai_easy&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="613459259732613">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="929542147432655" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="466915632424809" type="SOrganikEasy">
+                            <param id="0" name="X">lastPosX_Easy</param>
+                            <param id="1" name="Y">lastPosY_Easy</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="147645391110820">
+            <conditions>
+                <condition id="0" name="On function" sid="235574483288019" type="Function">
+                    <param id="0" name="Name">&quot;selesai_easy&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="848184946806697">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="502850209202725" type="System">
+                            <param id="0" name="Variable">countSampahEasy</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">20</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="750455834676847" type="TxSelesaiEasy">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="672771717353052" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="150998963970125" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="497555725077626">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="155769547615130" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="748393019997030" type="Function">
+                    <param id="0" name="Name">&quot;init_easy&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -42,42 +42,164 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="BGMenu" sid="862227024861403">
-            <plugin id="TiledBg" />
-            <texture original-source="D:\Penyimpanan Utama\Downloads\Download From Ms.edge\Home Screen (1).png" />
-        </object-type>
-        <object-type name="HomeScreen" sid="365012556636011">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="389440322875801" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Penyimpanan Utama\Downloads\Download From Ms.edge\Home Screen (1).png" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="judul" sid="868962046915462">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Sine" sid="607411137657999">
-                    <behavior id="Sin" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="226811781067434" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ACER\Downloads\Desain tanpa judul (12) (1).png">
-                        <collision-poly>
-                            <point x="0.190435" y="0.336923" />
-                            <point x="0.5" y="0.147692" />
-                            <point x="0.814348" y="0.328462" />
-                            <point x="0.843913" y="0.5" />
-                            <point x="0.834565" y="0.707308" />
-                            <point x="0.5" y="0.796923" />
-                            <point x="0.181739" y="0.678462" />
-                            <point x="0.151957" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
+        <object-folder name="HomeAsset">
+            <object-type name="HomeScreen" sid="365012556636011">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="389440322875801" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Penyimpanan Utama\Downloads\Download From Ms.edge\Home Screen (1).png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="judul" sid="868962046915462">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="607411137657999">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                    <behavior-type name="Sine2" sid="510866421695774">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="226811781067434" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ACER\Downloads\Desain tanpa judul (12) (1).png">
+                            <collision-poly>
+                                <point x="0.190435" y="0.336923" />
+                                <point x="0.5" y="0.147692" />
+                                <point x="0.814348" y="0.328462" />
+                                <point x="0.843913" y="0.5" />
+                                <point x="0.834565" y="0.707308" />
+                                <point x="0.5" y="0.796923" />
+                                <point x="0.181739" y="0.678462" />
+                                <point x="0.151957" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Profile" sid="945679876245034">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="477014190930947" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\FOLDER KULIAH\SEMESTER 5\Pemrogrman_Game 1\asset icon\TbProfil.png">
+                            <collision-poly>
+                                <point x="0.145946" y="0.139175" />
+                                <point x="0.5" y="0" />
+                                <point x="0.848649" y="0.14433" />
+                                <point x="0.997297" y="0.5" />
+                                <point x="0.851351" y="0.858247" />
+                                <point x="0.5" y="0.997423" />
+                                <point x="0.151351" y="0.85567" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TbAnOrganik" sid="291580387799195">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="703870571690451" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ACER\Downloads\kotak-sampah-anorganik.png">
+                            <collision-poly>
+                                <point x="0.0655271" y="0.046" />
+                                <point x="0.5" y="0" />
+                                <point x="0.934473" y="0.046" />
+                                <point x="0.915954" y="0.5" />
+                                <point x="0.957265" y="0.97" />
+                                <point x="0.0911681" y="0.936" />
+                                <point x="0.131054" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TbMulai" sid="373006681843016">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="249533622396580">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="119164207593904" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501285" original-source="D:\FOLDER KULIAH\SEMESTER 5\Pemrogrman_Game 1\asset icon\TbPlay.png">
+                            <collision-poly>
+                                <point x="0.145946" y="0.138817" />
+                                <point x="0.5" y="0.00257069" />
+                                <point x="0.845946" y="0.14653" />
+                                <point x="0.997297" y="0.498715" />
+                                <point x="0.851351" y="0.858612" />
+                                <point x="0.5" y="0.997429" />
+                                <point x="0.154054" y="0.85347" />
+                                <point x="0" y="0.498715" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TbSetting" sid="486415923315530">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="690390839504770" speed="5">
+                        <frame duration="1" hotspotX="0.500967" hotspotY="0.5" original-source="C:\Users\ACER\Downloads\button-settings.png">
+                            <collision-poly>
+                                <point x="0.147002" y="0.144487" />
+                                <point x="0.499033" y="0" />
+                                <point x="0.851064" y="0.146388" />
+                                <point x="1" y="0.5" />
+                                <point x="0.852998" y="0.855513" />
+                                <point x="0.499033" y="1" />
+                                <point x="0.147002" y="0.855513" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TsOrganik" sid="334382422471903">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="452143883793743" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ACER\Downloads\kotak-sampah-organik.png">
+                            <collision-poly>
+                                <point x="0.0655271" y="0.046" />
+                                <point x="0.5" y="0" />
+                                <point x="0.934473" y="0.046" />
+                                <point x="0.915954" y="0.5" />
+                                <point x="0.957265" y="0.97" />
+                                <point x="0.0911681" y="0.936" />
+                                <point x="0.131054" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="bgloading" sid="809533622945563">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="loading" sid="928301226854592">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="12" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="179807567560856" speed="5">
+                        <frame duration="1" hotspotX="0.500247" hotspotY="0.501171" original-source="D:\Construct2\Loading\Sprite-Loading_20241227_054412_0000.png" />
+                        <frame duration="1" hotspotX="0.500247" hotspotY="0.501171" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501171" original-source="D:\Construct2\Loading\Sprite-Loading_20241227_054437_0000.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501171" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501171" original-source="D:\Construct2\Loading\Sprite-Loading_20241227_054459_0000.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501171" original-source="D:\Construct2\Loading\Sprite-Loading_20241227_054519_0000.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501171" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501171" original-source="D:\Construct2\Loading\Sprite-Loading_20241227_054545_0000.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501171" original-source="D:\Construct2\Loading\Sprite-Loading_20241227_054611_0000.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501171" original-source="D:\Construct2\Loading\Sprite-Loading_20241227_054626_0000.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501171" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501171" original-source="D:\Construct2\Loading\Sprite-Loading_20241227_054643_0000.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
         <object-type name="TbPlay" sid="762587376853102">
             <plugin id="Sprite" />
             <animation-folder>
@@ -86,109 +208,8 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="TbMulai" sid="373006681843016">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Sine" sid="249533622396580">
-                    <behavior id="Sin" />
-                </behavior-type>
-                <behavior-type name="Sine2" sid="357581881926019">
-                    <behavior id="Sin" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="119164207593904" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.501285" original-source="D:\FOLDER KULIAH\SEMESTER 5\Pemrogrman_Game 1\asset icon\TbPlay.png">
-                        <collision-poly>
-                            <point x="0.145946" y="0.138817" />
-                            <point x="0.5" y="0.00257069" />
-                            <point x="0.845946" y="0.14653" />
-                            <point x="0.997297" y="0.498715" />
-                            <point x="0.851351" y="0.858612" />
-                            <point x="0.5" y="0.997429" />
-                            <point x="0.154054" y="0.85347" />
-                            <point x="0" y="0.498715" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="TbSetting" sid="486415923315530">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="690390839504770" speed="5">
-                    <frame duration="1" hotspotX="0.500967" hotspotY="0.5" original-source="C:\Users\ACER\Downloads\button-settings.png">
-                        <collision-poly>
-                            <point x="0.147002" y="0.144487" />
-                            <point x="0.499033" y="0" />
-                            <point x="0.851064" y="0.146388" />
-                            <point x="1" y="0.5" />
-                            <point x="0.852998" y="0.855513" />
-                            <point x="0.499033" y="1" />
-                            <point x="0.147002" y="0.855513" />
-                            <point x="0" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Touch" sid="208015409852910">
             <plugin id="Touch" />
-        </object-type>
-        <object-type name="TbAnOrganik" sid="291580387799195">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="703870571690451" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ACER\Downloads\kotak-sampah-anorganik.png">
-                        <collision-poly>
-                            <point x="0.0655271" y="0.046" />
-                            <point x="0.5" y="0" />
-                            <point x="0.934473" y="0.046" />
-                            <point x="0.915954" y="0.5" />
-                            <point x="0.957265" y="0.97" />
-                            <point x="0.0911681" y="0.936" />
-                            <point x="0.131054" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="TsOrganik" sid="334382422471903">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="452143883793743" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ACER\Downloads\kotak-sampah-organik.png">
-                        <collision-poly>
-                            <point x="0.0655271" y="0.046" />
-                            <point x="0.5" y="0" />
-                            <point x="0.934473" y="0.046" />
-                            <point x="0.915954" y="0.5" />
-                            <point x="0.957265" y="0.97" />
-                            <point x="0.0911681" y="0.936" />
-                            <point x="0.131054" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Profile" sid="945679876245034">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="477014190930947" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\FOLDER KULIAH\SEMESTER 5\Pemrogrman_Game 1\asset icon\TbProfil.png">
-                        <collision-poly>
-                            <point x="0.145946" y="0.139175" />
-                            <point x="0.5" y="0" />
-                            <point x="0.848649" y="0.14433" />
-                            <point x="0.997297" y="0.5" />
-                            <point x="0.851351" y="0.858247" />
-                            <point x="0.5" y="0.997423" />
-                            <point x="0.151351" y="0.85567" />
-                            <point x="0" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
         </object-type>
     </object-folder>
     <families />

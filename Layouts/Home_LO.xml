@@ -81,13 +81,26 @@
                         <behavior-instance type="Sine">
                             <properties>
                                 <active-on-start>Yes</active-on-start>
-                                <movement>Size</movement>
+                                <movement>Angle</movement>
                                 <wave>Sine</wave>
-                                <period>2</period>
+                                <period>4</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
-                                <magnitude>50</magnitude>
+                                <magnitude>6</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Sine2">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>4</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>10</magnitude>
                                 <magnitude-random>0</magnitude-random>
                             </properties>
                         </behavior-instance>
@@ -96,10 +109,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>960</x>
-                        <y>361</y>
+                        <y>401</y>
                         <z>0</z>
-                        <width>927</width>
-                        <height>560</height>
+                        <width>1068.64831543</width>
+                        <height>645.569763184</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -118,26 +131,13 @@
                         <behavior-instance type="Sine">
                             <properties>
                                 <active-on-start>Yes</active-on-start>
-                                <movement>Height</movement>
-                                <wave>Sine</wave>
-                                <period>2</period>
-                                <period-random>0</period-random>
-                                <period-offset>0</period-offset>
-                                <period-offset-random>0</period-offset-random>
-                                <magnitude>25</magnitude>
-                                <magnitude-random>0</magnitude-random>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Sine2">
-                            <properties>
-                                <active-on-start>Yes</active-on-start>
-                                <movement>Width</movement>
+                                <movement>Size</movement>
                                 <wave>Sine</wave>
                                 <period>4</period>
                                 <period-random>0</period-random>
                                 <period-offset>0</period-offset>
                                 <period-offset-random>0</period-offset-random>
-                                <magnitude>25</magnitude>
+                                <magnitude>2</magnitude>
                                 <magnitude-random>0</magnitude-random>
                             </properties>
                         </behavior-instance>
@@ -146,10 +146,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>960.000061035</x>
-                        <y>777</y>
+                        <y>818.145568848</y>
                         <z>0</z>
-                        <width>213.724960327</width>
-                        <height>224.700012207</height>
+                        <width>229.180786133</width>
+                        <height>240.949523926</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.501285374</hotspotY>
@@ -167,11 +167,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1816</x>
-                        <y>98</y>
+                        <x>1292</x>
+                        <y>844</y>
                         <z>0</z>
-                        <width>150.659942627</width>
-                        <height>158.396469116</height>
+                        <width>176</width>
+                        <height>175</height>
                         <depth>0</depth>
                         <hotspotX>0.500967145</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -233,14 +233,75 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>103</x>
-                        <y>103</y>
+                        <x>606</x>
+                        <y>844</y>
                         <z>0</z>
-                        <width>150.660003662</width>
-                        <height>158.395996094</height>
+                        <width>176.030975342</width>
+                        <height>185.069702148</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="Opening" sid="575425514594734">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="bgloading" uid="8">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-18</x>
+                        <y>-13</y>
+                        <z>0</z>
+                        <width>1956</width>
+                        <height>1106</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="loading" uid="9">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>960.188293457</x>
+                        <y>540.188293457</y>
+                        <z>0</z>
+                        <width>761.19720459</width>
+                        <height>160.826919556</height>
+                        <depth>0</depth>
+                        <hotspotX>0.500247419</hotspotX>
+                        <hotspotY>0.501170933</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

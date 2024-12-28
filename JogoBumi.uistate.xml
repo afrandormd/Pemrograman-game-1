@@ -10,9 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="1">Game</layout>
-        <layout active="1" order="2">Home_LO</layout>
-        <event-sheet order="3">Home_ES</event-sheet>
+        <layout active="1" order="0">Home_LO</layout>
+        <event-sheet order="1">Home_ES</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -23,19 +22,21 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <families-expanded root="1" />
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
-        <folder expanded="1" path="layout-folder/" />
-        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="object-folder/HomeAsset/" />
+        <folder expanded="0" path="layout-folder/" />
+        <folder expanded="0" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/HomeScreen/" />
         <folder expanded="1" path="animation-folder/judul/" />
-        <folder expanded="1" path="animation-folder/TbPlay/" />
+        <folder expanded="1" path="animation-folder/Profile/" />
+        <folder expanded="1" path="animation-folder/TbAnOrganik/" />
         <folder expanded="1" path="animation-folder/TbMulai/" />
         <folder expanded="1" path="animation-folder/TbSetting/" />
-        <folder expanded="1" path="animation-folder/TbAnOrganik/" />
         <folder expanded="1" path="animation-folder/TsOrganik/" />
-        <folder expanded="1" path="animation-folder/Profile/" />
+        <folder expanded="1" path="animation-folder/loading/" />
+        <folder expanded="1" path="animation-folder/TbPlay/" />
     </folders-expanded>
 </c2uistate>

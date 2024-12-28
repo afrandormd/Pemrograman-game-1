@@ -2,5 +2,62 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Home_ES</name>
-    <events />
+    <events>
+        <variable constant="0" name="timerOpening" sid="772275171352629" static="0" type="number">0</variable>
+        <event-block sid="311489093499544">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="492537437747244" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="450498785466390" type="System">
+                    <param id="0" name="Layer">&quot;Opening&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="517594019192299" type="System">
+                    <param id="0" name="Layer">&quot;Contents&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="378291789092493" type="System">
+                    <param id="0" name="Layer">&quot;Contents&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="781234973134001">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="240195315653487" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="210057175962666" type="System">
+                    <param id="0" name="Variable">timerOpening</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="608444697487590">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="464550156766593" type="System">
+                    <param id="0" name="Variable">timerOpening</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="637368567274091" type="System">
+                    <param id="0" name="Layer">&quot;Opening&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="207434204209455" type="System">
+                    <param id="0" name="Layer">&quot;Contents&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="748776715516844" type="System">
+                    <param id="0" name="Layer">&quot;Contents&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>

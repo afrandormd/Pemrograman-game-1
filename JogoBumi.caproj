@@ -334,9 +334,6 @@
             <object-type name="TxSelesaiEasy" sid="565109458426110">
                 <plugin id="Text" />
             </object-type>
-            <object-type name="Function" sid="809153012754628">
-                <plugin id="Function" />
-            </object-type>
             <object-type name="SOrganikEasy" sid="106300570694638">
                 <plugin id="Sprite" />
                 <behaviors>
@@ -675,6 +672,9 @@
         </object-type>
         <object-type name="Touch" sid="208015409852910">
             <plugin id="Touch" />
+        </object-type>
+        <object-type name="Function" sid="809153012754628">
+            <plugin id="Function" />
         </object-type>
     </object-folder>
     <families />

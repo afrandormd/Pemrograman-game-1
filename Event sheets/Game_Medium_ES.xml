@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Game_Medium_ES</name>
+    <events>
+        <variable constant="0" name="timer" sid="685757972260321" static="0" type="number">10</variable>
+        <variable constant="0" name="skor" sid="546601472884639" static="0" type="number">0</variable>
+        <event-block sid="465180691098991">
+            <conditions>
+                <condition id="-18" name="On created" sid="648882965823638" type="SAnorganikMedium" />
+            </conditions>
+            <actions />
+        </event-block>
+    </events>
+</c2eventsheet>

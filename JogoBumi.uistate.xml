@@ -12,7 +12,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="1">Home_LO</layout>
         <layout order="3">Game_Easy_LO</layout>
-        <event-sheet active="1" order="2">Game_Easy_ES</event-sheet>
+        <layout active="1" order="4">Game_Medium_LO</layout>
+        <event-sheet order="2">Game_Easy_ES</event-sheet>
+        <event-sheet order="5">Game_Medium_ES</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -25,6 +27,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/" />
         <folder expanded="0" path="object-folder/HomeAsset/" />
         <folder expanded="1" path="object-folder/GameEasyAsset/" />
+        <folder expanded="1" path="object-folder/GameMediumAsset/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
@@ -47,6 +50,19 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/PosEasy_3/" />
         <folder expanded="1" path="animation-folder/PosEasy_4/" />
         <folder expanded="1" path="animation-folder/SOrganikEasy/" />
+        <folder expanded="1" path="animation-folder/TSAnorganikMedium/" />
+        <folder expanded="1" path="animation-folder/TSOrganikMedium/" />
+        <folder expanded="1" path="animation-folder/SAnorganikMedium/" />
+        <folder expanded="1" path="animation-folder/SOrganikMedium/" />
+        <folder expanded="1" path="animation-folder/PosMedium_1/" />
+        <folder expanded="1" path="animation-folder/PosMedium_2/" />
+        <folder expanded="1" path="animation-folder/PosMedium_3/" />
+        <folder expanded="1" path="animation-folder/PosMedium_4/" />
+        <folder expanded="1" path="animation-folder/PosMedium_5/" />
+        <folder expanded="1" path="animation-folder/PosMedium_6/" />
+        <folder expanded="1" path="animation-folder/PosMedium_7/" />
+        <folder expanded="1" path="animation-folder/PosMedium_8/" />
+        <folder expanded="1" path="animation-folder/Timer_Medium/" />
         <folder expanded="1" path="animation-folder/TbPlay/" />
     </folders-expanded>
 </c2uistate>

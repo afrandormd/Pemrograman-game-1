@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Game_Hard_ES</name>
+    <events>
+        <variable constant="0" name="timerHard" sid="261909133915788" static="0" type="number">60</variable>
+        <variable constant="0" name="skorHard" sid="123117140843375" static="0" type="number">0</variable>
+        <event-block sid="840749796474122">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="841941579622193" type="System">
+                    <param id="0" name="Interval (seconds)">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="327957425528253" type="spawnerHard">
+                    <param id="0" name="Object">jenisSampahHard</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="568945521984133" type="System">
+                    <param id="0" name="Variable">timerHard</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="746891011872773">
+            <conditions>
+                <condition id="-18" name="On created" sid="850255296127253" type="jenisSampahHard" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="951119616758618" type="jenisSampahHard">
+                    <param id="0" name="Frame number">random(11)</param>
+                </action>
+                <action id="-10" name="Set value" sid="165962882636990" type="jenisSampahHard">
+                    <param id="0" name="Instance variable">posY</param>
+                    <param id="1" name="Value">Self.Y</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="148988651818213">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="868420425548479" type="jenisSampahHard">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Number">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="197477019215284" type="jenisSampahHard">
+                            <param id="0" name="Instance variable">jenisSampah</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="546809743328863">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="513455640967659" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="581405906044312" type="jenisSampahHard">
+                            <param id="0" name="Instance variable">jenisSampah</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="848068779772863">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="970703941532275" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="548840134216837" type="TxSkorHard">
+                    <param id="0" name="Text">skorHard</param>
+                </action>
+                <action id="0" name="Set text" sid="562976760150859" type="TxTimerHard">
+                    <param id="0" name="Text">timerHard</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="630625344680507" title="Drag &amp; Drop" />
+        <event-block sid="587559135366192">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="329096534568160" type="jenisSampahHard" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="239902615262908">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="288879503806785" type="jenisSampahHard">
+                            <param id="0" name="Object">BoxSampahHard</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="700891102343971">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="704660064491236" type="jenisSampahHard">
+                                    <param id="0" name="Instance variable">jenisSampah</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">BoxSampahHard.jenisTempatHard</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="904105036204146" type="jenisSampahHard" />
+                                <action id="-10" name="Add to" sid="593620290720273" type="System">
+                                    <param id="0" name="Variable">skorHard</param>
+                                    <param id="1" name="Value">15</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="992382227516201">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="674670252738307" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="855654479939185" type="System">
+                                    <param id="0" name="Variable">skorHard</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="249752557376581" type="jenisSampahHard">
+                                    <param id="0" name="Y">Self.posY</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="963859508226019">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="296449387722497" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Set Y" sid="392788425519146" type="jenisSampahHard">
+                            <param id="0" name="Y">Self.posY</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="816165854345541" title="Game Over" />
+        <event-block sid="532417471512709">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="591578329885956" type="jenisSampahHard">
+                    <param id="0" name="Object">gameOverHard</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="602847363823118" type="jenisSampahHard" />
+                <action id="-4" name="Set layer visible" sid="335086888612119" type="System">
+                    <param id="0" name="Layer">&quot;GameOver&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="808726340132265">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="518115479811738" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="539855349634074" type="System">
+                    <param id="0" name="Layer">&quot;GameOver&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="571437986917873">
+            <conditions>
+                <condition id="17" name="On tap object" sid="834042578884148" type="Touch">
+                    <param id="0" name="Object">TbResetHard</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="163572306532150" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="302624267263446">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="655471504468308" type="System">
+                    <param id="0" name="Variable">timerHard</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="855865124644875" type="System">
+                    <param id="0" name="Layer">&quot;GameOver&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="492847464474322" type="System">
+                    <param id="0" name="Variable">timerHard</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="637655503570692">
+            <conditions>
+                <condition id="17" name="On tap object" sid="782139604178102" type="Touch">
+                    <param id="0" name="Object">TbResetHard</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="696384909942133" type="System" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

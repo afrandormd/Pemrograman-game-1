@@ -3,13 +3,228 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Game_Medium_ES</name>
     <events>
-        <variable constant="0" name="timer" sid="685757972260321" static="0" type="number">10</variable>
-        <variable constant="0" name="skor" sid="546601472884639" static="0" type="number">0</variable>
-        <event-block sid="465180691098991">
+        <variable constant="0" name="countSampah" sid="973283397111154" static="0" type="number">0</variable>
+        <variable constant="0" name="lastPosY_Medium" sid="722786986232868" static="0" type="number">0</variable>
+        <variable constant="0" name="lastPosX_Medium" sid="856145233434367" static="0" type="number">0</variable>
+        <event-block sid="737490049100415">
             <conditions>
-                <condition id="-18" name="On created" sid="648882965823638" type="SAnorganikMedium" />
+                <condition id="0" name="On function" sid="317586650134064" type="Function">
+                    <param id="0" name="Name">&quot;init_medium&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="647429164620422" type="System">
+                    <param id="0" name="Object to create">SAnorganikMedium</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">PosMedium_1.X</param>
+                    <param id="3" name="Y">PosMedium_1.Y</param>
+                </action>
+                <action id="-3" name="Create object" sid="763710784235802" type="System">
+                    <param id="0" name="Object to create">SOrganikMedium</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">PosMedium_2.X</param>
+                    <param id="3" name="Y">PosMedium_2.Y</param>
+                </action>
+                <action id="-3" name="Create object" sid="139067855532418" type="System">
+                    <param id="0" name="Object to create">SAnorganikMedium</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">PosMedium_3.X</param>
+                    <param id="3" name="Y">PosMedium_3.Y</param>
+                </action>
+                <action id="-3" name="Create object" sid="862185573708605" type="System">
+                    <param id="0" name="Object to create">SOrganikMedium</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">PosMedium_4.X</param>
+                    <param id="3" name="Y">PosMedium_4.Y</param>
+                </action>
+                <action id="-3" name="Create object" sid="219623810787640" type="System">
+                    <param id="0" name="Object to create">SAnorganikMedium</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">PosMedium_5.X</param>
+                    <param id="3" name="Y">PosMedium_5.Y</param>
+                </action>
+                <action id="-3" name="Create object" sid="936577882845328" type="System">
+                    <param id="0" name="Object to create">SOrganikMedium</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">PosMedium_6.X</param>
+                    <param id="3" name="Y">PosMedium_6.Y</param>
+                </action>
+                <action id="-3" name="Create object" sid="603571993339658" type="System">
+                    <param id="0" name="Object to create">SAnorganikMedium</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">PosMedium_7.X</param>
+                    <param id="3" name="Y">PosMedium_7.Y</param>
+                </action>
+                <action id="-3" name="Create object" sid="814560746642000" type="System">
+                    <param id="0" name="Object to create">SOrganikMedium</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">PosMedium_8.X</param>
+                    <param id="3" name="Y">PosMedium_8.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="622760683134058">
+            <conditions>
+                <condition id="-18" name="On created" sid="164041244140745" type="SAnorganikMedium" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="776103642870695" type="SAnorganikMedium">
+                    <param id="0" name="Frame number">int(random(0,4))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="654953021339565">
+            <conditions>
+                <condition id="-18" name="On created" sid="249507521624341" type="SOrganikMedium" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="329217403729713" type="SOrganikMedium">
+                    <param id="0" name="Frame number">int(random(0,4))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="534125904985546">
+            <conditions>
+                <condition behavior="DragDrop" id="1" name="On drag start" sid="683386161526542" type="SAnorganikMedium" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="808254460765136" type="System">
+                    <param id="0" name="Variable">lastPosX_Medium</param>
+                    <param id="1" name="Value">SAnorganikMedium.X</param>
+                </action>
+                <action id="-9" name="Set value" sid="176274587567940" type="System">
+                    <param id="0" name="Variable">lastPosY_Medium</param>
+                    <param id="1" name="Value">SOrganikMedium.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="482911032059259">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="615422651395922" type="SAnorganikMedium" />
             </conditions>
             <actions />
+            <sub-events>
+                <event-block sid="335566872088320">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="773314568489412" type="SAnorganikMedium">
+                            <param id="0" name="Object">TSAnorganikMedium</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="934291931509064" type="SAnorganikMedium" />
+                        <action id="-10" name="Add to" sid="909938266260622" type="System">
+                            <param id="0" name="Variable">countSampah</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="484820294904631" type="Function">
+                            <param id="0" name="Name">&quot;selesai_medium&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="701977451171403">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="812437428722006" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="938882892645500" type="SAnorganikMedium">
+                            <param id="0" name="X">lastPosX_Medium</param>
+                            <param id="1" name="Y">lastPosY_Medium</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="552348372679889">
+            <conditions>
+                <condition behavior="DragDrop" id="1" name="On drag start" sid="512495415596966" type="SOrganikMedium" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="374045585095505" type="System">
+                    <param id="0" name="Variable">lastPosX_Medium</param>
+                    <param id="1" name="Value">SOrganikMedium.X</param>
+                </action>
+                <action id="-9" name="Set value" sid="865662059534121" type="System">
+                    <param id="0" name="Variable">lastPosY_Medium</param>
+                    <param id="1" name="Value">SOrganikMedium.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="586921172055122">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="735589540123822" type="SOrganikMedium" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="642867422930286">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="933687612546724" type="SOrganikMedium">
+                            <param id="0" name="Object">TSOrganikMedium</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="283076905352950" type="SOrganikMedium" />
+                        <action id="-10" name="Add to" sid="367632001444253" type="System">
+                            <param id="0" name="Variable">countSampah</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="890510096434466" type="Function">
+                            <param id="0" name="Name">&quot;selesai_medium&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="169104522605143">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="404094869198112" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="347648112272700" type="SOrganikMedium">
+                            <param id="0" name="X">lastPosX_Medium</param>
+                            <param id="1" name="Y">lastPosY_Medium</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="127289223129960">
+            <conditions>
+                <condition id="0" name="On function" sid="614858945444532" type="Function">
+                    <param id="0" name="Name">&quot;selesai_medium&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="324276649087493">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="979705673408391" type="System">
+                            <param id="0" name="Variable">countSampah</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">8</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="471209587310741" type="TxSelesaiMedium">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="101773107607329" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="527341914574514" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="342495164698039">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="171141260266257" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="936142355823260" type="Function">
+                    <param id="0" name="Name">&quot;init_medium&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

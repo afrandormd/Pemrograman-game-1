@@ -441,53 +441,10 @@
                 </behaviors>
                 <animation-folder>
                     <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="552064995609332" speed="0">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.505376" original-source="D:\FOLDER KULIAH\SEMESTER 5\Pemrogrman_Game 1\asset\NonOrganik1.png">
-                            <collision-poly>
-                                <point x="0.130769" y="0.182796" />
-                                <point x="0.5" y="0.0537634" />
-                                <point x="0.853846" y="0.204301" />
-                                <point x="0.992308" y="0.494624" />
-                                <point x="0.876923" y="0.827957" />
-                                <point x="0.5" y="0.989247" />
-                                <point x="0.184615" y="0.741935" />
-                                <point x="0.1" y="0.494624" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.505618" original-source="D:\FOLDER KULIAH\SEMESTER 5\Pemrogrman_Game 1\asset\NonOrganik2.png">
-                            <collision-poly>
-                                <point x="0.0517241" y="0.0674157" />
-                                <point x="0.741379" y="0.337079" />
-                                <point x="0.991379" y="0.494382" />
-                                <point x="0.896552" y="0.865169" />
-                                <point x="0.5" y="0.966292" />
-                                <point x="0.163793" y="0.786517" />
-                                <point x="0.00862069" y="0.494382" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ACER\Downloads\level 2 (8).png">
-                            <collision-poly>
-                                <point x="0.24683" y="0.436699" />
-                                <point x="0.5" y="0.414663" />
-                                <point x="0.769248" y="0.408253" />
-                                <point x="0.779212" y="0.5" />
-                                <point x="0.779665" y="0.610176" />
-                                <point x="0.5" y="0.895032" />
-                                <point x="0.220562" y="0.609776" />
-                                <point x="0.233696" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ACER\Downloads\asset lv 3-1 (2).png">
-                            <collision-poly>
-                                <point x="0.179121" y="0.316907" />
-                                <point x="0.5" y="0.304487" />
-                                <point x="0.8125" y="0.331731" />
-                                <point x="0.880435" y="0.5" />
-                                <point x="0.860054" y="0.752404" />
-                                <point x="0.5" y="0.842548" />
-                                <point x="0.169158" y="0.700721" />
-                                <point x="0.143342" y="0.5" />
-                            </collision-poly>
-                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.505376" original-source="D:\FOLDER KULIAH\SEMESTER 5\Pemrogrman_Game 1\asset\NonOrganik1.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.505618" original-source="D:\FOLDER KULIAH\SEMESTER 5\Pemrogrman_Game 1\asset\NonOrganik2.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.505376" original-source="C:\Users\ACER\Downloads\level 2 (8).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.505376" original-source="C:\Users\ACER\Downloads\asset lv 3-1 (2).png" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -500,52 +457,10 @@
                 </behaviors>
                 <animation-folder>
                     <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="251443765208516" speed="0">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.505263" original-source="D:\FOLDER KULIAH\SEMESTER 5\Pemrogrman_Game 1\asset\Organik1.png">
-                            <collision-poly>
-                                <point x="0.162162" y="0.126316" />
-                                <point x="0.5" y="0.0842105" />
-                                <point x="0.77027" y="0.178947" />
-                                <point x="0.689189" y="0.494737" />
-                                <point x="0.891892" y="0.915789" />
-                                <point x="0.5" y="0.989474" />
-                                <point x="0.202703" y="0.842105" />
-                                <point x="0.310811" y="0.494737" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.504425" hotspotY="0.5" original-source="D:\FOLDER KULIAH\SEMESTER 5\Pemrogrman_Game 1\asset\Organik2.png">
-                            <collision-poly>
-                                <point x="0.221239" y="0.304878" />
-                                <point x="0.495575" y="0.0609756" />
-                                <point x="0.893805" y="0.146341" />
-                                <point x="0.460177" y="0.5" />
-                                <point x="0.911504" y="0.878049" />
-                                <point x="0.495575" y="0.878049" />
-                                <point x="0.176991" y="0.756098" />
-                                <point x="0.0530973" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ACER\Downloads\level 2 (9).png">
-                            <collision-poly>
-                                <point x="0.322237" y="0.570112" />
-                                <point x="0.5" y="0.298077" />
-                                <point x="0.702219" y="0.526843" />
-                                <point x="0.601902" y="0.5" />
-                                <point x="0.771286" y="0.595353" />
-                                <point x="0.5" y="0.764824" />
-                                <point x="0.193388" y="0.657853" />
-                                <point x="0.365716" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ACER\Downloads\24.png">
-                            <collision-poly>
-                                <point x="0.383832" y="0.679087" />
-                                <point x="0.5" y="0.63101" />
-                                <point x="0.637681" y="0.5" />
-                                <point x="0.634511" y="0.353365" />
-                                <point x="0.5" y="0.805288" />
-                                <point x="0.557745" y="0.5" />
-                            </collision-poly>
-                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.505263" original-source="D:\FOLDER KULIAH\SEMESTER 5\Pemrogrman_Game 1\asset\Organik1.png" />
+                        <frame duration="1" hotspotX="0.504425" hotspotY="0.5" original-source="D:\FOLDER KULIAH\SEMESTER 5\Pemrogrman_Game 1\asset\Organik2.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.505376" original-source="C:\Users\ACER\Downloads\level 2 (9).png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.51" original-source="C:\Users\ACER\Downloads\24.png" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -656,29 +571,37 @@
             <object-type name="TxSelesaiMedium" sid="705632210574541">
                 <plugin id="Text" />
             </object-type>
-            <object-type name="TxSkor" sid="600717918453089">
-                <plugin id="Text" />
-            </object-type>
-            <object-type name="Timer_Medium" sid="709167628053294">
+            <object-type name="TimerBoardMedium" sid="298286108451494">
                 <plugin id="Sprite" />
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="607465390033235" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\FOLDER KULIAH\SEMESTER 5\Pemrogrman_Game 1\asset icon\timer.png">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="854310212638217" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.503448" original-source="C:\Users\ACER\Downloads\timer (1).png">
                             <collision-poly>
-                                <point x="0.222656" y="0.222656" />
-                                <point x="0.5" y="0" />
-                                <point x="0.775391" y="0.224609" />
-                                <point x="0.933594" y="0.5" />
-                                <point x="0.839844" y="0.839844" />
-                                <point x="0.5" y="1" />
-                                <point x="0.160156" y="0.839844" />
-                                <point x="0.0664063" y="0.5" />
+                                <point x="0.118243" y="0.241379" />
+                                <point x="0.402027" y="0.496552" />
+                                <point x="0.135135" y="0.724138" />
+                                <point x="0.0945946" y="0.496552" />
                             </collision-poly>
                         </frame>
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="TxTimerMedium" sid="546531688891244">
+            <object-type name="ScoreBoardMedium" sid="775417716984896">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="315376071924658" speed="5">
+                        <frame duration="1" hotspotX="0.501629" hotspotY="0.5" original-source="C:\Users\ACER\Downloads\score-board (1).png">
+                            <collision-poly>
+                                <point x="0.14658" y="0.330882" />
+                                <point x="0.260586" y="0.5" />
+                                <point x="0.153094" y="0.654412" />
+                                <point x="0.140065" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TxScoreMedium" sid="673825683467830">
                 <plugin id="Text" />
             </object-type>
         </object-folder>

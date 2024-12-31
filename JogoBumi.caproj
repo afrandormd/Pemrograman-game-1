@@ -11,6 +11,7 @@
     <saved-with-version>26200</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
@@ -20,7 +21,9 @@
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="lunarray" id="lunarray_LiteTween" version="1.700000048">LiteTween</behavior>
     </used-behaviors>
     <used-effects />
     <configurations>
@@ -85,6 +88,18 @@
             </object-type>
             <object-type name="Profile" sid="945679876245034">
                 <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="SaveX" sid="848231711900760" type="number" />
+                    <instance-variable name="SaveY" sid="869037127588679" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Sine" sid="730749631082928">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                    <behavior-type name="LiteTween" sid="713807760471129">
+                        <behavior id="lunarray_LiteTween" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="477014190930947" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\FOLDER KULIAH\SEMESTER 5\Pemrogrman_Game 1\asset icon\TbProfil.png">
@@ -122,9 +137,16 @@
             </object-type>
             <object-type name="TbMulai" sid="373006681843016">
                 <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="SaveX" sid="969261296659461" type="number" />
+                    <instance-variable name="SaveY" sid="548723868877327" type="number" />
+                </instance-variables>
                 <behaviors>
                     <behavior-type name="Sine" sid="249533622396580">
                         <behavior id="Sin" />
+                    </behavior-type>
+                    <behavior-type name="LiteTween" sid="400118966280865">
+                        <behavior id="lunarray_LiteTween" />
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
@@ -146,6 +168,18 @@
             </object-type>
             <object-type name="TbSetting" sid="486415923315530">
                 <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="SaveX" sid="138270314773498" type="number" />
+                    <instance-variable name="SaveY" sid="261821218691965" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Sine" sid="391278386891792">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                    <behavior-type name="LiteTween" sid="228836456147155">
+                        <behavior id="lunarray_LiteTween" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="690390839504770" speed="5">
                         <frame duration="1" hotspotX="0.500967" hotspotY="0.5" original-source="C:\Users\ACER\Downloads\button-settings.png">
@@ -201,6 +235,199 @@
                         <frame duration="1" hotspotX="0.5" hotspotY="0.501171" original-source="D:\Construct2\Loading\Sprite-Loading_20241227_054626_0000.png" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.501171" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.501171" original-source="D:\Construct2\Loading\Sprite-Loading_20241227_054643_0000.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="buttonlogout" sid="631863735956168">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="SaveX" sid="692809675851835" type="number" />
+                    <instance-variable name="SaveY" sid="867927415037799" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="LiteTween" sid="870895587611789">
+                        <behavior id="lunarray_LiteTween" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="277536143737082" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.502618" original-source="D:\Construct2\Bahan\button-log-out.png">
+                            <collision-poly>
+                                <point x="0.148936" y="0.146597" />
+                                <point x="0.5" y="0" />
+                                <point x="0.851064" y="0.146597" />
+                                <point x="1" y="0.497382" />
+                                <point x="0.851064" y="0.853403" />
+                                <point x="0.5" y="1" />
+                                <point x="0.148936" y="0.853403" />
+                                <point x="0" y="0.497382" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="AssetHomeCopy" sid="124366859996188">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="200233746545041">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                    <behavior-type name="Sine" sid="402202829854755">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="649962694310593" speed="5">
+                        <frame duration="1" hotspotX="0.500208" hotspotY="0.5" original-source="D:\Construct2\Bahan\Asset Home copy.png">
+                            <collision-poly>
+                                <point x="0.147486" y="0.142228" />
+                                <point x="0.499792" y="0" />
+                                <point x="0.846282" y="0.148237" />
+                                <point x="0.987952" y="0.5" />
+                                <point x="0.84919" y="0.854567" />
+                                <point x="0.499792" y="0.995994" />
+                                <point x="0.154549" y="0.850962" />
+                                <point x="0.00623182" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="bgpup1" sid="317983735653462">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="Board2" sid="250516057254437">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="LiteTween" sid="473898770832303">
+                        <behavior id="lunarray_LiteTween" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="235831926806421" speed="5">
+                        <frame duration="1" hotspotX="0.500416" hotspotY="0.500549" original-source="D:\Construct2\Bahan\Board 1.png">
+                            <collision-poly>
+                                <point x="0.108894" y="0.143798" />
+                                <point x="0.499584" y="0.207464" />
+                                <point x="0.86118" y="0.183315" />
+                                <point x="0.888612" y="0.852909" />
+                                <point x="0.499584" y="0.819978" />
+                                <point x="0.128845" y="0.829857" />
+                                <point x="0.136326" y="0.499451" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TbInfo" sid="560578023180557">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="492460457310245">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                    <behavior-type name="Sine" sid="916637188144465">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="287456139498386" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501285" original-source="D:\Construct2\Bahan\TbInfo.png">
+                            <collision-poly>
+                                <point x="0.145946" y="0.138817" />
+                                <point x="0.5" y="0" />
+                                <point x="0.848649" y="0.143959" />
+                                <point x="0.997297" y="0.498715" />
+                                <point x="0.851351" y="0.858612" />
+                                <point x="0.5" y="0.997429" />
+                                <point x="0.154054" y="0.85347" />
+                                <point x="0" y="0.498715" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TbMusik" sid="820650305830555">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="469182110866705">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                    <behavior-type name="Sine" sid="827158304246685">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="375273884989915" speed="5">
+                        <frame duration="1" hotspotX="0.502326" hotspotY="0.502203" original-source="D:\Construct2\Bahan\TbMusik 1.png">
+                            <collision-poly>
+                                <point x="0.144186" y="0.136564" />
+                                <point x="0.497674" y="0" />
+                                <point x="0.846512" y="0.145374" />
+                                <point x="0.995349" y="0.497797" />
+                                <point x="0.846512" y="0.854626" />
+                                <point x="0.497674" y="0.995595" />
+                                <point x="0.153488" y="0.854626" />
+                                <point x="0" y="0.497797" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TbProfil" sid="279600006774766">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="188865074959614">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                    <behavior-type name="Sine" sid="382618949909516">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="241072499494723" speed="5">
+                        <frame duration="1" hotspotX="0.502304" hotspotY="0.502203" original-source="D:\Construct2\Bahan\TbProfil 1.png">
+                            <collision-poly>
+                                <point x="0.147465" y="0.140969" />
+                                <point x="0.497696" y="0" />
+                                <point x="0.847926" y="0.145374" />
+                                <point x="0.995392" y="0.497797" />
+                                <point x="0.852535" y="0.859031" />
+                                <point x="0.497696" y="0.995595" />
+                                <point x="0.152074" y="0.854626" />
+                                <point x="0" y="0.497797" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="judul2" sid="721805449350348">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="688487290816664">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                    <behavior-type name="Sine2" sid="758638725748947">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                    <behavior-type name="Pin" sid="193773834238214">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="224986763375197" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ACER\Downloads\Desain tanpa judul (12) (1).png">
+                            <collision-poly>
+                                <point x="0.190435" y="0.336923" />
+                                <point x="0.5" y="0.147692" />
+                                <point x="0.814348" y="0.328462" />
+                                <point x="0.843913" y="0.5" />
+                                <point x="0.834565" y="0.707308" />
+                                <point x="0.5" y="0.796923" />
+                                <point x="0.181739" y="0.678462" />
+                                <point x="0.151957" y="0.5" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
@@ -842,6 +1069,9 @@
         <object-type name="Audio" sid="157726490256265">
             <plugin id="Audio" />
         </object-type>
+        <object-type name="Browser" sid="719281918875400">
+            <plugin id="Browser" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -877,6 +1107,7 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
+        <global-instance type="Browser" uid="59" />
     </global-instances>
     <sounds-folder />
     <music-folder />

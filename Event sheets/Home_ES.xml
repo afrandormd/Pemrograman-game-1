@@ -59,5 +59,390 @@
                 </action>
             </actions>
         </event-block>
+        <event-group description="" sid="813365828832653" title="PopupSetting">
+            <sub-events>
+                <event-block sid="680564051182919">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="786129704965006" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="341479463323509" type="AssetHomeCopy">
+                            <param id="0" name="Pin to">Board2</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="812134252660792" type="TbProfil">
+                            <param id="0" name="Pin to">Board2</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="526663682691042" type="TbMusik">
+                            <param id="0" name="Pin to">Board2</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="245571021443591" type="TbInfo">
+                            <param id="0" name="Pin to">Board2</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="629526264192043" type="judul2">
+                            <param id="0" name="Pin to">Board2</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="306737391386210" type="Board2">
+                            <param id="0" name="Y">Self.Y-900</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="156600629596167" type="System">
+                            <param id="0" name="Layer">&quot;PopupSet&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="636698999893894">
+                    <conditions>
+                        <condition id="0" name="On function" sid="202537585313583" type="Function">
+                            <param id="0" name="Name">&quot;pop-in&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="LiteTween" id="10" name="Start" sid="680014185923846" type="Board2">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="686005417687980" type="Board2">
+                            <param id="0" name="Target is">0</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">Self.X</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="273267767105311" type="Board2">
+                            <param id="0" name="Target is">1</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">540</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="736015653297035">
+                    <conditions>
+                        <condition id="0" name="On function" sid="200237224987888" type="Function">
+                            <param id="0" name="Name">&quot;pop-out&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="LiteTween" id="10" name="Start" sid="968910917105656" type="Board2">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="559957789102529" type="Board2">
+                            <param id="0" name="Target is">0</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">Self.X</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="735843987258816" type="Board2">
+                            <param id="0" name="Target is">1</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">-900</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="169628251833020">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="889993469049343" type="Touch">
+                            <param id="0" name="Object">TbSetting</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="793070619432205" type="System">
+                            <param id="0" name="Layer">&quot;PopupSet&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="641963114725952" type="Function">
+                            <param id="0" name="Name">&quot;pop-in&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="560493668215501">
+            <conditions>
+                <condition id="-9" name="Layer is visible" sid="892738623980597" type="System">
+                    <param id="0" name="Layer">&quot;PopupSet&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="776355338529726">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="989523884261388" type="Touch">
+                            <param id="0" name="Object">AssetHomeCopy</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="800512396663073" type="Function">
+                            <param id="0" name="Name">&quot;pop-out&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="393992363666966" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="688633303347650" type="System">
+                            <param id="0" name="Layer">&quot;PopupSet&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="545357699177745">
+            <conditions>
+                <condition id="-9" inverted="1" name="Layer is visible" sid="531556091442743" type="System">
+                    <param id="0" name="Layer">&quot;PopupSet&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-group description="" sid="231291260582322" title="Touch Animasi">
+                    <sub-events>
+                        <event-block sid="720833727604703">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="889361566546318" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="104076539796024">
+                                    <conditions>
+                                        <condition id="-11" name="For Each" sid="538861761853344" type="System">
+                                            <param id="0" name="Object">TbMulai</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="593883994336470" type="TbMulai">
+                                            <param id="0" name="Instance variable">SaveX</param>
+                                            <param id="1" name="Value">Self.Width</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="235126936496244" type="TbMulai">
+                                            <param id="0" name="Instance variable">SaveY</param>
+                                            <param id="1" name="Value">Self.Height</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="404562204223779">
+                                    <conditions>
+                                        <condition id="-11" name="For Each" sid="460057418609151" type="System">
+                                            <param id="0" name="Object">Profile</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="400937240550572" type="Profile">
+                                            <param id="0" name="Instance variable">SaveX</param>
+                                            <param id="1" name="Value">Self.Width</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="241328247473719" type="Profile">
+                                            <param id="0" name="Instance variable">SaveY</param>
+                                            <param id="1" name="Value">Self.Height</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="536551547996412">
+                                    <conditions>
+                                        <condition id="-11" name="For Each" sid="736663433386675" type="System">
+                                            <param id="0" name="Object">TbSetting</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="708706380007216" type="TbSetting">
+                                            <param id="0" name="Instance variable">SaveX</param>
+                                            <param id="1" name="Value">Self.Width</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="802298257413269" type="TbSetting">
+                                            <param id="0" name="Instance variable">SaveY</param>
+                                            <param id="1" name="Value">Self.Height</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="820959981973356">
+                                    <conditions>
+                                        <condition id="-11" name="For Each" sid="948899293012507" type="System">
+                                            <param id="0" name="Object">buttonlogout</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="702998884398118" type="buttonlogout">
+                                            <param id="0" name="Instance variable">SaveX</param>
+                                            <param id="1" name="Value">Self.Width</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="945599104930071" type="buttonlogout">
+                                            <param id="0" name="Instance variable">SaveY</param>
+                                            <param id="1" name="Value">Self.Height</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="854318348878780">
+                            <conditions>
+                                <condition id="17" name="On tap object" sid="778814521899732" type="Touch">
+                                    <param id="0" name="Object">TbMulai</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="LiteTween" id="10" name="Start" sid="584267181891614" type="TbMulai">
+                                    <param id="0" name="Start Mode">0</param>
+                                    <param id="1" name="Force use current">0</param>
+                                </action>
+                                <action behavior="LiteTween" id="3" name="Set target" sid="552837132870202" type="TbMulai">
+                                    <param id="0" name="Target is">4</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">Self.SaveX+50</param>
+                                </action>
+                                <action behavior="LiteTween" id="3" name="Set target" sid="576403538030560" type="TbMulai">
+                                    <param id="0" name="Target is">5</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">Self.SaveY+50</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="261525635561165" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action behavior="LiteTween" id="10" name="Start" sid="376362417365360" type="TbMulai">
+                                    <param id="0" name="Start Mode">0</param>
+                                    <param id="1" name="Force use current">0</param>
+                                </action>
+                                <action behavior="LiteTween" id="3" name="Set target" sid="553613527087550" type="TbMulai">
+                                    <param id="0" name="Target is">4</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">Self.SaveX</param>
+                                </action>
+                                <action behavior="LiteTween" id="3" name="Set target" sid="623803933553264" type="TbMulai">
+                                    <param id="0" name="Target is">5</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">Self.SaveY</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="726258065035911">
+                            <conditions>
+                                <condition id="17" name="On tap object" sid="452952207055798" type="Touch">
+                                    <param id="0" name="Object">Profile</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="LiteTween" id="10" name="Start" sid="824118588077743" type="Profile">
+                                    <param id="0" name="Start Mode">0</param>
+                                    <param id="1" name="Force use current">0</param>
+                                </action>
+                                <action behavior="LiteTween" id="3" name="Set target" sid="623204622701174" type="Profile">
+                                    <param id="0" name="Target is">4</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">Self.SaveX+50</param>
+                                </action>
+                                <action behavior="LiteTween" id="3" name="Set target" sid="782178750376129" type="Profile">
+                                    <param id="0" name="Target is">5</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">Self.SaveY+50</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="288333573989659" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action behavior="LiteTween" id="10" name="Start" sid="711267225596977" type="Profile">
+                                    <param id="0" name="Start Mode">0</param>
+                                    <param id="1" name="Force use current">0</param>
+                                </action>
+                                <action behavior="LiteTween" id="3" name="Set target" sid="932694288777182" type="Profile">
+                                    <param id="0" name="Target is">4</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">Self.SaveX</param>
+                                </action>
+                                <action behavior="LiteTween" id="3" name="Set target" sid="600760311503136" type="Profile">
+                                    <param id="0" name="Target is">5</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">Self.SaveY</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="851405670186208">
+                            <conditions>
+                                <condition id="17" name="On tap object" sid="800873815639582" type="Touch">
+                                    <param id="0" name="Object">TbSetting</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="LiteTween" id="10" name="Start" sid="119494473905724" type="TbSetting">
+                                    <param id="0" name="Start Mode">0</param>
+                                    <param id="1" name="Force use current">0</param>
+                                </action>
+                                <action behavior="LiteTween" id="3" name="Set target" sid="452666006350898" type="TbSetting">
+                                    <param id="0" name="Target is">4</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">Self.SaveX+50</param>
+                                </action>
+                                <action behavior="LiteTween" id="3" name="Set target" sid="739813138649378" type="TbSetting">
+                                    <param id="0" name="Target is">5</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">Self.SaveY+50</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="384479361145918" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action behavior="LiteTween" id="10" name="Start" sid="513786842911206" type="TbSetting">
+                                    <param id="0" name="Start Mode">0</param>
+                                    <param id="1" name="Force use current">0</param>
+                                </action>
+                                <action behavior="LiteTween" id="3" name="Set target" sid="523032360761039" type="TbSetting">
+                                    <param id="0" name="Target is">4</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">Self.SaveX</param>
+                                </action>
+                                <action behavior="LiteTween" id="3" name="Set target" sid="503789660543489" type="TbSetting">
+                                    <param id="0" name="Target is">5</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">Self.SaveY</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="716392128651319">
+                            <conditions>
+                                <condition id="17" name="On tap object" sid="424991930801955" type="Touch">
+                                    <param id="0" name="Object">buttonlogout</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="LiteTween" id="10" name="Start" sid="575976046659737" type="buttonlogout">
+                                    <param id="0" name="Start Mode">0</param>
+                                    <param id="1" name="Force use current">0</param>
+                                </action>
+                                <action behavior="LiteTween" id="3" name="Set target" sid="805511442214404" type="buttonlogout">
+                                    <param id="0" name="Target is">4</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">Self.SaveX+50</param>
+                                </action>
+                                <action behavior="LiteTween" id="3" name="Set target" sid="272791855217841" type="buttonlogout">
+                                    <param id="0" name="Target is">5</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">Self.SaveY+50</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="488096090515863" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action behavior="LiteTween" id="10" name="Start" sid="695022309029181" type="buttonlogout">
+                                    <param id="0" name="Start Mode">0</param>
+                                    <param id="1" name="Force use current">0</param>
+                                </action>
+                                <action behavior="LiteTween" id="3" name="Set target" sid="650759653071426" type="buttonlogout">
+                                    <param id="0" name="Target is">4</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">Self.SaveX</param>
+                                </action>
+                                <action behavior="LiteTween" id="3" name="Set target" sid="764383447063294" type="buttonlogout">
+                                    <param id="0" name="Target is">5</param>
+                                    <param id="1" name="Relativity">0</param>
+                                    <param id="2" name="Value">Self.SaveY</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="880786707133174" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="1" name="Close" sid="194973152826284" type="Browser" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-block>
     </events>
 </c2eventsheet>

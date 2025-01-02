@@ -449,8 +449,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1746.549072266</x>
-                        <y>78.344047546</y>
+                        <x>1645</x>
+                        <y>105</y>
                         <z>0</z>
                         <width>260.901885986</width>
                         <height>127.806663513</height>
@@ -471,8 +471,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>960.5</x>
-                        <y>81</y>
+                        <x>961</x>
+                        <y>105</y>
                         <z>0</z>
                         <width>260.902008057</width>
                         <height>127.806999207</height>
@@ -498,14 +498,36 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>921</x>
-                        <y>32</y>
+                        <x>902</x>
+                        <y>61</y>
                         <z>0</z>
                         <width>138</width>
                         <height>110</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="PauseButtonMedium" uid="75">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>188</x>
+                        <y>103</y>
+                        <z>0</z>
+                        <width>155.496002197</width>
+                        <height>158.20300293</height>
+                        <depth>0</depth>
+                        <hotspotX>0.500967145</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

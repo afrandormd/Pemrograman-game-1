@@ -49,6 +49,28 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="PauseButtonHard" uid="76">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>188</x>
+                        <y>103</y>
+                        <z>0</z>
+                        <width>155.496002197</width>
+                        <height>158.20300293</height>
+                        <depth>0</depth>
+                        <hotspotX>0.500967145</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -145,7 +167,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1645</x>
-                        <y>123</y>
+                        <y>105</y>
                         <z>0</z>
                         <width>296</width>
                         <height>145</height>
@@ -250,7 +272,7 @@
                     <behavior-instances>
                         <behavior-instance type="Bullet">
                             <properties>
-                                <speed>-200</speed>
+                                <speed>-100</speed>
                                 <acceleration>0</acceleration>
                                 <gravity>0</gravity>
                                 <bounce-off-solids>No</bounce-off-solids>
@@ -271,7 +293,7 @@
                         <x>2033</x>
                         <y>971</y>
                         <z>0</z>
-                        <width>255.342315674</width>
+                        <width>197.520233154</width>
                         <height>144.323913574</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -287,22 +309,22 @@
                         <font>Arial Black,-64,900,0</font>
                         <color>255,203,1</color>
                         <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>842</x>
-                        <y>67</y>
+                        <x>942</x>
+                        <y>106</y>
                         <z>0</z>
                         <width>196</width>
                         <height>94</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -336,22 +358,22 @@
                         <font>Arial Black,-64,900,0</font>
                         <color>0,0,102</color>
                         <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1638</x>
-                        <y>75</y>
+                        <x>1682</x>
+                        <y>109</y>
                         <z>0</z>
                         <width>106</width>
                         <height>95</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

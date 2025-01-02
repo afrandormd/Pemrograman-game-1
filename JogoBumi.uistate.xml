@@ -10,12 +10,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="1">Game_Easy_LO</layout>
+        <layout order="2">Game_Easy_LO</layout>
         <layout order="3">Game_Medium_LO</layout>
-        <layout active="1" order="4">Game_Hard_LO</layout>
-        <layout order="5">Home_LO</layout>
+        <layout order="5">Game_Hard_LO</layout>
+        <layout order="6">Home_LO</layout>
         <event-sheet order="0">Level_List_ES</event-sheet>
-        <event-sheet order="2">Game_Easy_ES</event-sheet>
+        <event-sheet order="1">Game_Easy_ES</event-sheet>
+        <event-sheet active="1" order="4">Game_Medium_ES</event-sheet>
+        <event-sheet order="8">Game_Hard_ES</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -27,9 +29,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
         <folder expanded="0" path="object-folder/HomeAsset/" />
-        <folder expanded="1" path="object-folder/GameEasyAsset/" />
+        <folder expanded="0" path="object-folder/GameEasyAsset/" />
         <folder expanded="1" path="object-folder/GameMediumAsset/" />
-        <folder expanded="1" path="object-folder/GameHardAsset/" />
+        <folder expanded="0" path="object-folder/GameHardAsset/" />
         <folder expanded="0" path="object-folder/LevelListAsset/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />

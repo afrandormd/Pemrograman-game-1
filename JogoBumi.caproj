@@ -872,6 +872,9 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="TxTimerMedium" sid="613231285390172">
+                <plugin id="Text" />
+            </object-type>
         </object-folder>
         <object-folder name="GameHardAsset">
             <object-type name="BG_Game_Hard" sid="731100506504737">

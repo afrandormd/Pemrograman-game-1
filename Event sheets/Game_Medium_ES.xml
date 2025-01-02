@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Game_Medium_ES</name>
     <events>
+        <variable constant="0" name="timerMedium" sid="522558376643291" static="0" type="number">50</variable>
+        <variable constant="0" name="skorMedium" sid="602250072465217" static="0" type="number">0</variable>
         <variable constant="0" name="countSampah" sid="973283397111154" static="0" type="number">0</variable>
         <variable constant="0" name="lastPosY_Medium" sid="722786986232868" static="0" type="number">0</variable>
         <variable constant="0" name="lastPosX_Medium" sid="856145233434367" static="0" type="number">0</variable>
@@ -83,53 +85,61 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="534125904985546">
+        <event-block sid="363783964268533">
             <conditions>
-                <condition behavior="DragDrop" id="1" name="On drag start" sid="683386161526542" type="SAnorganikMedium" />
+                <condition behavior="DragDrop" id="1" name="On drag start" sid="591887694417191" type="SAnorganikMedium" />
             </conditions>
             <actions>
-                <action id="-9" name="Set value" sid="808254460765136" type="System">
+                <action id="-9" name="Set value" sid="233172951494174" type="System">
                     <param id="0" name="Variable">lastPosX_Medium</param>
                     <param id="1" name="Value">SAnorganikMedium.X</param>
                 </action>
-                <action id="-9" name="Set value" sid="176274587567940" type="System">
+                <action id="-9" name="Set value" sid="574812386366873" type="System">
                     <param id="0" name="Variable">lastPosY_Medium</param>
-                    <param id="1" name="Value">SOrganikMedium.Y</param>
+                    <param id="1" name="Value">SAnorganikMedium.Y</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="482911032059259">
+        <event-block sid="850940947149193">
             <conditions>
-                <condition behavior="DragDrop" id="2" name="On drop" sid="615422651395922" type="SAnorganikMedium" />
+                <condition behavior="DragDrop" id="2" name="On drop" sid="500085310619028" type="SAnorganikMedium" />
             </conditions>
             <actions />
             <sub-events>
-                <event-block sid="335566872088320">
+                <event-block sid="894199089162263">
                     <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="773314568489412" type="SAnorganikMedium">
+                        <condition id="1" name="Is overlapping another object" sid="873991784783350" type="SAnorganikMedium">
                             <param id="0" name="Object">TSAnorganikMedium</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Destroy" sid="934291931509064" type="SAnorganikMedium" />
-                        <action id="-10" name="Add to" sid="909938266260622" type="System">
+                        <action id="-9" name="Destroy" sid="558830346723266" type="SAnorganikMedium" />
+                        <action id="-10" name="Add to" sid="837074130410950" type="System">
                             <param id="0" name="Variable">countSampah</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="0" name="Call function" sid="484820294904631" type="Function">
+                        <action id="-10" name="Add to" sid="371554845929134" type="System">
+                            <param id="0" name="Variable">skorMedium</param>
+                            <param id="1" name="Value">10</param>
+                        </action>
+                        <action id="0" name="Call function" sid="493043337533854" type="Function">
                             <param id="0" name="Name">&quot;selesai_medium&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="701977451171403">
+                <event-block sid="556939538416309">
                     <conditions>
-                        <condition id="-22" name="Else" sid="812437428722006" type="System" />
+                        <condition id="-22" name="Else" sid="181610165346116" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-3" name="Set position" sid="938882892645500" type="SAnorganikMedium">
+                        <action id="-3" name="Set position" sid="943230122276887" type="SAnorganikMedium">
                             <param id="0" name="X">lastPosX_Medium</param>
                             <param id="1" name="Y">lastPosY_Medium</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="556305611544012" type="System">
+                            <param id="0" name="Variable">skorMedium</param>
+                            <param id="1" name="Value">5</param>
                         </action>
                     </actions>
                 </event-block>
@@ -168,6 +178,10 @@
                             <param id="0" name="Variable">countSampah</param>
                             <param id="1" name="Value">1</param>
                         </action>
+                        <action id="-10" name="Add to" sid="479251970234352" type="System">
+                            <param id="0" name="Variable">skorMedium</param>
+                            <param id="1" name="Value">10</param>
+                        </action>
                         <action id="0" name="Call function" sid="890510096434466" type="Function">
                             <param id="0" name="Name">&quot;selesai_medium&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
@@ -182,6 +196,10 @@
                         <action id="-3" name="Set position" sid="347648112272700" type="SOrganikMedium">
                             <param id="0" name="X">lastPosX_Medium</param>
                             <param id="1" name="Y">lastPosY_Medium</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="919587629954034" type="System">
+                            <param id="0" name="Variable">skorMedium</param>
+                            <param id="1" name="Value">5</param>
                         </action>
                     </actions>
                 </event-block>
@@ -198,9 +216,9 @@
                 <event-block sid="324276649087493">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="979705673408391" type="System">
-                            <param id="0" name="Variable">countSampah</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">8</param>
+                            <param id="0" name="Variable">timerMedium</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -223,6 +241,32 @@
                 <action id="0" name="Call function" sid="936142355823260" type="Function">
                     <param id="0" name="Name">&quot;init_medium&quot;</param>
                     <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="991048679905322">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="819089613114761" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="828315678323746" type="TxScoreMedium">
+                    <param id="0" name="Text">skorMedium</param>
+                </action>
+                <action id="0" name="Set text" sid="265262020550198" type="TxTimerMedium">
+                    <param id="0" name="Text">timerMedium</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="209076033176455">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="283211748406043" type="System">
+                    <param id="0" name="Interval (seconds)">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="647495943171944" type="System">
+                    <param id="0" name="Variable">timerMedium</param>
+                    <param id="1" name="Value">1</param>
                 </action>
             </actions>
         </event-block>

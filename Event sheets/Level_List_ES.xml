@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Level_List_ES</name>
+    <events>
+        <event-block sid="949851208871776">
+            <conditions>
+                <condition id="17" name="On tap object" sid="901459968766484" type="Touch">
+                    <param id="0" name="Object">EasyLevelButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="132374256945574" type="System">
+                    <param id="0" name="Layout">Game_Easy_LO</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="464735963140245">
+            <conditions>
+                <condition id="17" name="On tap object" sid="236934439835581" type="Touch">
+                    <param id="0" name="Object">MediumLevelButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="457812615000242" type="System">
+                    <param id="0" name="Layout">Game_Medium_LO</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="715554066618300">
+            <conditions>
+                <condition id="17" name="On tap object" sid="875810506085731" type="Touch">
+                    <param id="0" name="Object">HardLevelButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="491245469972258" type="System">
+                    <param id="0" name="Layout">Game_Hard_LO</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="150278054422548">
+            <conditions>
+                <condition id="17" name="On tap object" sid="137755401664541" type="Touch">
+                    <param id="0" name="Object">LevelListHomeButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="624000883950031" type="System">
+                    <param id="0" name="Layout">Home_LO</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

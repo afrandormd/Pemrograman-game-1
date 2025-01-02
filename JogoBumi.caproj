@@ -617,6 +617,28 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="TxSkorEasy" sid="331879109153547">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="PauseButtonEasy" sid="451482014589950">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="787825141489395" speed="5">
+                        <frame duration="1" hotspotX="0.500967" hotspotY="0.5" original-source="D:\Penyimpanan Utama\Downloads\Download From Ms.edge\button-pause.png">
+                            <collision-poly>
+                                <point x="0.147002" y="0.144487" />
+                                <point x="0.499033" y="0" />
+                                <point x="0.851064" y="0.146388" />
+                                <point x="1" y="0.5" />
+                                <point x="0.851064" y="0.853612" />
+                                <point x="0.499033" y="1" />
+                                <point x="0.147002" y="0.855513" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="GameMediumAsset">
             <object-type name="BG_Game_Medium" sid="608711913458643">
@@ -831,6 +853,25 @@
             <object-type name="TxScoreMedium" sid="673825683467830">
                 <plugin id="Text" />
             </object-type>
+            <object-type name="PauseButtonMedium" sid="463063998484275">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="865699846164438" speed="5">
+                        <frame duration="1" hotspotX="0.500967" hotspotY="0.5" original-source="D:\Penyimpanan Utama\Downloads\Download From Ms.edge\button-pause.png">
+                            <collision-poly>
+                                <point x="0.147002" y="0.144487" />
+                                <point x="0.499033" y="0" />
+                                <point x="0.851064" y="0.146388" />
+                                <point x="1" y="0.5" />
+                                <point x="0.851064" y="0.853612" />
+                                <point x="0.499033" y="1" />
+                                <point x="0.147002" y="0.855513" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="GameHardAsset">
             <object-type name="BG_Game_Hard" sid="731100506504737">
@@ -1033,6 +1074,144 @@
             <object-type name="TxTimerHard" sid="499269270021383">
                 <plugin id="Text" />
             </object-type>
+            <object-type name="PauseButtonHard" sid="658238801863360">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="331108929294262" speed="5">
+                        <frame duration="1" hotspotX="0.500967" hotspotY="0.5" original-source="D:\Penyimpanan Utama\Downloads\Download From Ms.edge\button-pause.png">
+                            <collision-poly>
+                                <point x="0.147002" y="0.144487" />
+                                <point x="0.499033" y="0" />
+                                <point x="0.851064" y="0.146388" />
+                                <point x="1" y="0.5" />
+                                <point x="0.851064" y="0.853612" />
+                                <point x="0.499033" y="1" />
+                                <point x="0.147002" y="0.855513" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="LevelListAsset">
+            <object-type name="LevelListBoard" sid="606186407941952">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="847617984760279" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Penyimpanan Utama\Downloads\Download From Ms.edge\Board (1).png">
+                            <collision-poly>
+                                <point x="0.108421" y="0.143056" />
+                                <point x="0.5" y="0.206944" />
+                                <point x="0.861053" y="0.183333" />
+                                <point x="0.889474" y="0.854167" />
+                                <point x="0.5" y="0.819444" />
+                                <point x="0.128421" y="0.830556" />
+                                <point x="0.136842" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="EasyLevelButton" sid="509896031190813">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="400655147259714">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="985528838302770" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Penyimpanan Utama\Downloads\Download From Ms.edge\Easy-Level (2).png">
+                            <collision-poly>
+                                <point x="0.0226415" y="0.0213523" />
+                                <point x="0.5" y="0" />
+                                <point x="0.977359" y="0.0213523" />
+                                <point x="1" y="0.5" />
+                                <point x="0.977359" y="0.978648" />
+                                <point x="0.5" y="1" />
+                                <point x="0.0226415" y="0.978648" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TxTitleLevelBoardList" sid="806634838084049">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="MediumLevelButton" sid="883145444975728">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="473261185864233">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="226886507640853" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Penyimpanan Utama\Downloads\Download From Ms.edge\Medium-Level.png">
+                            <collision-poly>
+                                <point x="0.0226415" y="0.0213523" />
+                                <point x="0.5" y="0" />
+                                <point x="0.977359" y="0.0213523" />
+                                <point x="1" y="0.5" />
+                                <point x="0.977359" y="0.978648" />
+                                <point x="0.5" y="1" />
+                                <point x="0.0226415" y="0.978648" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="HardLevelButton" sid="533652831986326">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="289535748857674">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="156966184456517" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Penyimpanan Utama\Downloads\Download From Ms.edge\Hard-Level.png">
+                            <collision-poly>
+                                <point x="0.0226415" y="0.0213523" />
+                                <point x="0.5" y="0" />
+                                <point x="0.977359" y="0.0213523" />
+                                <point x="1" y="0.5" />
+                                <point x="0.977359" y="0.978648" />
+                                <point x="0.5" y="1" />
+                                <point x="0.0226415" y="0.978648" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="LevelListHomeButton" sid="392273224991156">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="541900181475816">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="868534514763163" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Penyimpanan Utama\Downloads\Download From Ms.edge\TbHome (1).png">
+                            <collision-poly>
+                                <point x="0.145946" y="0.139175" />
+                                <point x="0.5" y="0" />
+                                <point x="0.848649" y="0.14433" />
+                                <point x="1" y="0.5" />
+                                <point x="0.854054" y="0.860825" />
+                                <point x="0.5" y="0.997423" />
+                                <point x="0.154054" y="0.853093" />
+                                <point x="0.0027027" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-type name="TbPlay" sid="762587376853102">
             <plugin id="Sprite" />
@@ -1072,6 +1251,10 @@
         <object-type name="Browser" sid="719281918875400">
             <plugin id="Browser" />
         </object-type>
+        <object-type name="BG_LevelList" sid="742774560338138">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\Penyimpanan Utama\Downloads\Download From Ms.edge\bg-easy-game (1).png" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1079,12 +1262,14 @@
         <layout>Home_LO.xml</layout>
         <layout>Game_Medium_LO.xml</layout>
         <layout>Game_Hard_LO.xml</layout>
+        <layout>Level_List_LO.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Game_Easy_ES.xml</event-sheet>
         <event-sheet>Home_ES.xml</event-sheet>
         <event-sheet>Game_Medium_ES.xml</event-sheet>
         <event-sheet>Game_Hard_ES.xml</event-sheet>
+        <event-sheet>Level_List_ES.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="4">

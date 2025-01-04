@@ -1350,6 +1350,11 @@
         <file name="sound-right.ogg" />
         <file name="sound-wrong.m4a" />
         <file name="sound-wrong.ogg" />
+        <file name="button_click.ogg" />
+        <file name="easy.ogg" />
+        <file name="hard.ogg" />
+        <file name="MainBGM.ogg" />
+        <file name="medium.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>

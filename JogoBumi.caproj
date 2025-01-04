@@ -1297,7 +1297,13 @@
         </global-instance>
         <global-instance type="Browser" uid="59" />
     </global-instances>
-    <sounds-folder />
+    <sounds-folder>
+        <file name="button_click.ogg" />
+        <file name="MainBGM.ogg" />
+        <file name="hard.ogg" />
+        <file name="medium.ogg" />
+        <file name="easy.ogg" />
+    </sounds-folder>
     <music-folder />
     <files-folder>
         <file-folder name="Icons">

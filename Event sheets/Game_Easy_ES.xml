@@ -37,6 +37,13 @@
                     <param id="2" name="X">PosEasy_4.X</param>
                     <param id="3" name="Y">PosEasy_4.Y</param>
                 </action>
+                <action id="33" name="Stop all" sid="689032006120962" type="Audio" />
+                <action id="0" name="Play" sid="706068056518251" type="Audio">
+                    <param id="0" name="Audio file">easy</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="715468962506060">

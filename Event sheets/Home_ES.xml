@@ -93,6 +93,15 @@
                             <param id="0" name="Layer">&quot;PopupSet&quot;</param>
                             <param id="1" name="Visibility">0</param>
                         </action>
+                        <action id="-16" name="Wait" sid="728817485916170" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                        <action id="0" name="Play" sid="328203468781123" type="Audio">
+                            <param id="0" name="Audio file">MainBGM</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;main&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="636698999893894">
@@ -156,6 +165,12 @@
                             <param id="0" name="Name">&quot;pop-in&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
                         </action>
+                        <action id="0" name="Play" sid="617369862219216" type="Audio">
+                            <param id="0" name="Audio file">button_click</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -179,12 +194,30 @@
                             <param id="0" name="Name">&quot;pop-out&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
                         </action>
+                        <action id="0" name="Play" sid="438736824590401" type="Audio">
+                            <param id="0" name="Audio file">button_click</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                         <action id="-16" name="Wait" sid="393992363666966" type="System">
                             <param id="0" name="Seconds">1.0</param>
                         </action>
                         <action id="-4" name="Set layer visible" sid="688633303347650" type="System">
                             <param id="0" name="Layer">&quot;PopupSet&quot;</param>
                             <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="368243268324523">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="297694926701415" type="Touch">
+                            <param id="0" name="Object">TbMusik</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="8" name="Set silent" sid="271030597285635" type="Audio">
+                            <param id="0" name="Mode">2</param>
                         </action>
                     </actions>
                 </event-block>
@@ -297,6 +330,12 @@
                                     <param id="1" name="Relativity">0</param>
                                     <param id="2" name="Value">Self.SaveY+50</param>
                                 </action>
+                                <action id="0" name="Play" sid="160339810983022" type="Audio">
+                                    <param id="0" name="Audio file">button_click</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
                                 <action id="-16" name="Wait" sid="261525635561165" type="System">
                                     <param id="0" name="Seconds">0.2</param>
                                 </action>
@@ -340,6 +379,12 @@
                                     <param id="1" name="Relativity">0</param>
                                     <param id="2" name="Value">Self.SaveY+50</param>
                                 </action>
+                                <action id="0" name="Play" sid="337708707633207" type="Audio">
+                                    <param id="0" name="Audio file">button_click</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
                                 <action id="-16" name="Wait" sid="288333573989659" type="System">
                                     <param id="0" name="Seconds">0.2</param>
                                 </action>
@@ -380,6 +425,12 @@
                                     <param id="1" name="Relativity">0</param>
                                     <param id="2" name="Value">Self.SaveY+50</param>
                                 </action>
+                                <action id="0" name="Play" sid="502208944775162" type="Audio">
+                                    <param id="0" name="Audio file">button_click</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
                                 <action id="-16" name="Wait" sid="384479361145918" type="System">
                                     <param id="0" name="Seconds">0.2</param>
                                 </action>
@@ -419,6 +470,12 @@
                                     <param id="0" name="Target is">5</param>
                                     <param id="1" name="Relativity">0</param>
                                     <param id="2" name="Value">Self.SaveY+50</param>
+                                </action>
+                                <action id="0" name="Play" sid="216592008032871" type="Audio">
+                                    <param id="0" name="Audio file">button_click</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                                 <action id="-16" name="Wait" sid="488096090515863" type="System">
                                     <param id="0" name="Seconds">0.2</param>

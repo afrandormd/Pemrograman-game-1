@@ -5,6 +5,20 @@
     <events>
         <variable constant="0" name="timerHard" sid="261909133915788" static="0" type="number">60</variable>
         <variable constant="0" name="skorHard" sid="123117140843375" static="0" type="number">0</variable>
+        <event-block sid="376628248084986">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="691147005413305" type="System" />
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="227031204031743" type="Audio" />
+                <action id="0" name="Play" sid="753933959419175" type="Audio">
+                    <param id="0" name="Audio file">hard</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="840749796474122">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="841941579622193" type="System">
@@ -170,6 +184,12 @@
             </conditions>
             <actions>
                 <action id="-26" name="Restart layout" sid="163572306532150" type="System" />
+                <action id="0" name="Play" sid="709875414118287" type="Audio">
+                    <param id="0" name="Audio file">button_click</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="302624267263446">
@@ -189,16 +209,6 @@
                     <param id="0" name="Variable">timerHard</param>
                     <param id="1" name="Value">0</param>
                 </action>
-            </actions>
-        </event-block>
-        <event-block sid="637655503570692">
-            <conditions>
-                <condition id="17" name="On tap object" sid="782139604178102" type="Touch">
-                    <param id="0" name="Object">TbResetHard</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-26" name="Restart layout" sid="696384909942133" type="System" />
             </actions>
         </event-block>
     </events>

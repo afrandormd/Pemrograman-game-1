@@ -13,6 +13,12 @@
                 <action id="-2" name="Go to layout" sid="132374256945574" type="System">
                     <param id="0" name="Layout">Game_Easy_LO</param>
                 </action>
+                <action id="0" name="Play" sid="766453026514671" type="Audio">
+                    <param id="0" name="Audio file">button_click</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="464735963140245">
@@ -24,6 +30,12 @@
             <actions>
                 <action id="-2" name="Go to layout" sid="457812615000242" type="System">
                     <param id="0" name="Layout">Game_Medium_LO</param>
+                </action>
+                <action id="0" name="Play" sid="554405039964686" type="Audio">
+                    <param id="0" name="Audio file">button_click</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -37,6 +49,12 @@
                 <action id="-2" name="Go to layout" sid="491245469972258" type="System">
                     <param id="0" name="Layout">Game_Hard_LO</param>
                 </action>
+                <action id="0" name="Play" sid="159749983389337" type="Audio">
+                    <param id="0" name="Audio file">button_click</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="150278054422548">
@@ -48,6 +66,12 @@
             <actions>
                 <action id="-2" name="Go to layout" sid="624000883950031" type="System">
                     <param id="0" name="Layout">Home_LO</param>
+                </action>
+                <action id="0" name="Play" sid="102922017846655" type="Audio">
+                    <param id="0" name="Audio file">button_click</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
         </event-block>

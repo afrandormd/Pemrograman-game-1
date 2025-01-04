@@ -63,6 +63,13 @@
                     <param id="2" name="X">PosMedium_8.X</param>
                     <param id="3" name="Y">PosMedium_8.Y</param>
                 </action>
+                <action id="33" name="Stop all" sid="398504533624878" type="Audio" />
+                <action id="0" name="Play" sid="123676036962875" type="Audio">
+                    <param id="0" name="Audio file">medium</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="622760683134058">

@@ -13,6 +13,7 @@
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
@@ -639,6 +640,36 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="ParticlesEasy" sid="411602018785253">
+                <plugin id="Particles" />
+                <texture />
+            </object-type>
+            <object-type name="popUpEasy" sid="371750104179150">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="859725043111932" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="GOBoardEasy" sid="133574316946466">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="400981560778738" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Penyimpanan Utama\Downloads\Download From Ms.edge\Board (1).png">
+                            <collision-poly>
+                                <point x="0.108421" y="0.143056" />
+                                <point x="0.5" y="0.206944" />
+                                <point x="0.861053" y="0.183333" />
+                                <point x="0.889474" y="0.854167" />
+                                <point x="0.5" y="0.819444" />
+                                <point x="0.128421" y="0.830556" />
+                                <point x="0.136842" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="GameMediumAsset">
             <object-type name="BG_Game_Medium" sid="608711913458643">
@@ -647,6 +678,11 @@
             </object-type>
             <object-type name="TSAnorganikMedium" sid="829213479197793">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="550836524422228">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="986139675017678" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\FOLDER KULIAH\SEMESTER 5\Pemrogrman_Game 1\asset\kotak-sampah-anorganik.png">
@@ -665,6 +701,11 @@
             </object-type>
             <object-type name="TSOrganikMedium" sid="405294868775110">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="689002478537989">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="869763995401758" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\FOLDER KULIAH\SEMESTER 5\Pemrogrman_Game 1\asset\kotak-sampah-organik.png">
@@ -874,6 +915,10 @@
             </object-type>
             <object-type name="TxTimerMedium" sid="613231285390172">
                 <plugin id="Text" />
+            </object-type>
+            <object-type name="ParticlesMedium" sid="900390977120510">
+                <plugin id="Particles" />
+                <texture />
             </object-type>
         </object-folder>
         <object-folder name="GameHardAsset">
@@ -1096,6 +1141,10 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="ParticlesHard" sid="952677074936650">
+                <plugin id="Particles" />
+                <texture />
+            </object-type>
         </object-folder>
         <object-folder name="LevelListAsset">
             <object-type name="LevelListBoard" sid="606186407941952">
@@ -1230,7 +1279,7 @@
         <object-type name="Function" sid="809153012754628">
             <plugin id="Function" />
         </object-type>
-        <object-type name="Board" sid="688682322946604">
+        <object-type name="GOBoardHard" sid="688682322946604">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="484959500552285" speed="5">
@@ -1297,7 +1346,11 @@
         </global-instance>
         <global-instance type="Browser" uid="59" />
     </global-instances>
-    <sounds-folder />
+    <sounds-folder>
+        <file name="sound-right.ogg" />
+        <file name="sound-wrong.m4a" />
+        <file name="sound-wrong.ogg" />
+    </sounds-folder>
     <music-folder />
     <files-folder>
         <file-folder name="Icons">

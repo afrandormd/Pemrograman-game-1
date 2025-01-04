@@ -106,6 +106,17 @@
                                     <param id="0" name="Variable">skorHard</param>
                                     <param id="1" name="Value">15</param>
                                 </action>
+                                <action id="0" name="Play" sid="909073468567634" type="Audio">
+                                    <param id="0" name="Audio file">sound-right</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="707469054199937" type="jenisSampahHard">
+                                    <param id="0" name="Object">ParticlesHard</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="992382227516201">
@@ -119,6 +130,12 @@
                                 </action>
                                 <action id="-2" name="Set Y" sid="249752557376581" type="jenisSampahHard">
                                     <param id="0" name="Y">Self.posY</param>
+                                </action>
+                                <action id="0" name="Play" sid="144328969983624" type="Audio">
+                                    <param id="0" name="Audio file">sound-wrong</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -149,6 +166,7 @@
                     <param id="0" name="Layer">&quot;GameOver&quot;</param>
                     <param id="1" name="Visibility">1</param>
                 </action>
+                <action id="33" name="Stop all" sid="235183103985261" type="Audio" />
             </actions>
         </event-block>
         <event-block sid="808726340132265">
@@ -189,6 +207,7 @@
                     <param id="0" name="Variable">timerHard</param>
                     <param id="1" name="Value">0</param>
                 </action>
+                <action id="33" name="Stop all" sid="777274043473201" type="Audio" />
             </actions>
         </event-block>
         <event-block sid="637655503570692">

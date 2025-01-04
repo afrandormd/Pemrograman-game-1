@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Game_Easy_ES</name>
     <events>
-        <variable constant="0" name="countSampahEasy" sid="198933550858631" static="0" type="number">0</variable>
+        <variable constant="0" name="skorEasy" sid="198933550858631" static="0" type="number">0</variable>
         <variable constant="0" name="lastPosY_Easy" sid="662369252003613" static="0" type="number">0</variable>
         <variable constant="0" name="lastPosX_Easy" sid="460722436878696" static="0" type="number">0</variable>
         <event-block sid="208727227099278">
@@ -89,12 +89,23 @@
                     <actions>
                         <action id="-9" name="Destroy" sid="111184261114539" type="SAnorganikEasy" />
                         <action id="-10" name="Add to" sid="576783877721248" type="System">
-                            <param id="0" name="Variable">countSampahEasy</param>
+                            <param id="0" name="Variable">skorEasy</param>
                             <param id="1" name="Value">5</param>
                         </action>
                         <action id="0" name="Call function" sid="743215730862723" type="Function">
                             <param id="0" name="Name">&quot;selesai_easy&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="0" name="Play" sid="347495625900469" type="Audio">
+                            <param id="0" name="Audio file">sound-right</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="543543689394733" type="SAnorganikEasy">
+                            <param id="0" name="Object">ParticlesEasy</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -106,6 +117,12 @@
                         <action id="-3" name="Set position" sid="474676652699411" type="SAnorganikEasy">
                             <param id="0" name="X">lastPosX_Easy</param>
                             <param id="1" name="Y">lastPosY_Easy</param>
+                        </action>
+                        <action id="0" name="Play" sid="561211243706068" type="Audio">
+                            <param id="0" name="Audio file">sound-wrong</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -141,12 +158,23 @@
                     <actions>
                         <action id="-9" name="Destroy" sid="913248224053963" type="SOrganikEasy" />
                         <action id="-10" name="Add to" sid="647868277875765" type="System">
-                            <param id="0" name="Variable">countSampahEasy</param>
+                            <param id="0" name="Variable">skorEasy</param>
                             <param id="1" name="Value">5</param>
                         </action>
                         <action id="0" name="Call function" sid="965854628238563" type="Function">
                             <param id="0" name="Name">&quot;selesai_easy&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="0" name="Play" sid="430781701021464" type="Audio">
+                            <param id="0" name="Audio file">sound-right</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="118307621697533" type="SOrganikEasy">
+                            <param id="0" name="Object">ParticlesEasy</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -158,6 +186,12 @@
                         <action id="-3" name="Set position" sid="466915632424809" type="SOrganikEasy">
                             <param id="0" name="X">lastPosX_Easy</param>
                             <param id="1" name="Y">lastPosY_Easy</param>
+                        </action>
+                        <action id="0" name="Play" sid="569430035488957" type="Audio">
+                            <param id="0" name="Audio file">sound-wrong</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -174,7 +208,7 @@
                 <event-block sid="848184946806697">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="502850209202725" type="System">
-                            <param id="0" name="Variable">countSampahEasy</param>
+                            <param id="0" name="Variable">skorEasy</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">20</param>
                         </condition>
@@ -187,6 +221,7 @@
                             <param id="0" name="Seconds">2</param>
                         </action>
                         <action id="-26" name="Restart layout" sid="150998963970125" type="System" />
+                        <action id="33" name="Stop all" sid="749619260274290" type="Audio" />
                     </actions>
                 </event-block>
             </sub-events>
@@ -199,6 +234,16 @@
                 <action id="0" name="Call function" sid="748393019997030" type="Function">
                     <param id="0" name="Name">&quot;init_easy&quot;</param>
                     <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="318252040000911">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="812208531333399" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="743462304117043" type="TxSkorEasy">
+                    <param id="0" name="Text">skorEasy</param>
                 </action>
             </actions>
         </event-block>

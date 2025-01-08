@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Game_Medium_ES</name>
     <events>
-        <variable constant="0" name="timerMedium" sid="522558376643291" static="0" type="number">50</variable>
+        <variable constant="0" name="timerMedium" sid="522558376643291" static="0" type="number">20</variable>
         <variable constant="0" name="skorMedium" sid="602250072465217" static="0" type="number">0</variable>
         <variable constant="0" name="countSampah" sid="973283397111154" static="0" type="number">0</variable>
         <variable constant="0" name="lastPosY_Medium" sid="722786986232868" static="0" type="number">0</variable>
@@ -129,10 +129,6 @@
                             <param id="0" name="Variable">skorMedium</param>
                             <param id="1" name="Value">10</param>
                         </action>
-                        <action id="0" name="Call function" sid="493043337533854" type="Function">
-                            <param id="0" name="Name">&quot;selesai_medium&quot;</param>
-                            <param id="1" name="Parameter {n}"></param>
-                        </action>
                         <action id="0" name="Play" sid="450402154352497" type="Audio">
                             <param id="0" name="Audio file">sound-right</param>
                             <param id="2" name="Loop">0</param>
@@ -206,10 +202,6 @@
                             <param id="0" name="Variable">skorMedium</param>
                             <param id="1" name="Value">10</param>
                         </action>
-                        <action id="0" name="Call function" sid="890510096434466" type="Function">
-                            <param id="0" name="Name">&quot;selesai_medium&quot;</param>
-                            <param id="1" name="Parameter {n}"></param>
-                        </action>
                         <action id="0" name="Play" sid="801494324929429" type="Audio">
                             <param id="0" name="Audio file">sound-right</param>
                             <param id="2" name="Loop">0</param>
@@ -247,33 +239,8 @@
             </sub-events>
         </event-block>
         <event-block sid="127289223129960">
-            <conditions>
-                <condition id="0" name="On function" sid="614858945444532" type="Function">
-                    <param id="0" name="Name">&quot;selesai_medium&quot;</param>
-                </condition>
-            </conditions>
+            <conditions />
             <actions />
-            <sub-events>
-                <event-block sid="324276649087493">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="979705673408391" type="System">
-                            <param id="0" name="Variable">timerMedium</param>
-                            <param id="1" name="Comparison">3</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-16" name="Set opacity" sid="471209587310741" type="TxSelesaiMedium">
-                            <param id="0" name="Opacity">100</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="101773107607329" type="System">
-                            <param id="0" name="Seconds">2</param>
-                        </action>
-                        <action id="-26" name="Restart layout" sid="527341914574514" type="System" />
-                        <action id="33" name="Stop all" sid="148559413623907" type="Audio" />
-                    </actions>
-                </event-block>
-            </sub-events>
         </event-block>
         <event-block sid="342495164698039">
             <conditions>
@@ -310,6 +277,71 @@
                     <param id="0" name="Variable">timerMedium</param>
                     <param id="1" name="Value">1</param>
                 </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="956508633710100" title="game over medium" />
+        <event-block sid="969762310016002">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="765476339454936" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="783214928386038" type="System">
+                    <param id="0" name="Layer">&quot;GameOverMedium&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="719647876136809">
+            <conditions>
+                <condition id="17" name="On tap object" sid="389637834834480" type="Touch">
+                    <param id="0" name="Object">TbRestartMedium</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="610833109072364" type="System" />
+                <action id="33" name="Stop all" sid="148559413623907" type="Audio" />
+            </actions>
+        </event-block>
+        <event-block sid="418570745437989">
+            <conditions>
+                <condition id="17" name="On tap object" sid="836409891345579" type="Touch">
+                    <param id="0" name="Object">TbHomeMedium</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="489798495004775" type="System">
+                    <param id="0" name="Layout">Home_LO</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="154096091559130">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="749405292395109" type="System">
+                    <param id="0" name="Variable">timerMedium</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="812188420468955" type="System">
+                    <param id="0" name="Layer">&quot;GameOverMedium&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="534260361522794" type="System">
+                    <param id="0" name="Variable">timerMedium</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="33" name="Stop all" sid="619767170583586" type="Audio" />
+            </actions>
+        </event-block>
+        <event-block sid="232326432842277">
+            <conditions>
+                <condition id="17" name="On tap object" sid="702939179965515" type="Touch">
+                    <param id="0" name="Object">TbRestartMedium</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="503274908916435" type="System" />
             </actions>
         </event-block>
     </events>

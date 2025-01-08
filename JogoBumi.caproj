@@ -920,6 +920,73 @@
                 <plugin id="Particles" />
                 <texture />
             </object-type>
+            <object-type name="GameOverMedium" sid="583899777071992">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="470161868654049" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\FOLDER KULIAH\SEMESTER 5\Pemrogrman_Game 1\asset icon\Salinan gameOver.png">
+                            <collision-poly>
+                                <point x="0.0948905" y="0.169271" />
+                                <point x="0.5" y="0.126302" />
+                                <point x="0.917518" y="0.147135" />
+                                <point x="0.856204" y="0.5" />
+                                <point x="0.89854" y="0.81901" />
+                                <point x="0.115328" y="0.794271" />
+                                <point x="0.159124" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TbHomeMedium" sid="873872248725442">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="644891365796227" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\FOLDER KULIAH\SEMESTER 5\Pemrogrman_Game 1\asset icon\TbHome.png">
+                            <collision-poly>
+                                <point x="0.145946" y="0.139175" />
+                                <point x="0.5" y="0" />
+                                <point x="0.848649" y="0.14433" />
+                                <point x="1" y="0.5" />
+                                <point x="0.854054" y="0.860825" />
+                                <point x="0.5" y="0.997423" />
+                                <point x="0.154054" y="0.853093" />
+                                <point x="0.0027027" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TbRestartMedium" sid="312471615005330">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="322363867667214" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501285" original-source="D:\FOLDER KULIAH\SEMESTER 5\Pemrogrman_Game 1\asset icon\TbReset.png">
+                            <collision-poly>
+                                <point x="0.148649" y="0.141388" />
+                                <point x="0.5" y="0.00257069" />
+                                <point x="0.848649" y="0.143959" />
+                                <point x="0.997297" y="0.498715" />
+                                <point x="0.851351" y="0.858612" />
+                                <point x="0.5" y="0.997429" />
+                                <point x="0.154054" y="0.85347" />
+                                <point x="0.0027027" y="0.498715" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TxSkorResultMedium" sid="567801857010726">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="PopUpMedium" sid="267825240872712">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="851342673505418" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="GameHardAsset">
             <object-type name="BG_Game_Hard" sid="731100506504737">
@@ -1306,6 +1373,60 @@
         <object-type name="BG_LevelList" sid="742774560338138">
             <plugin id="TiledBg" />
             <texture original-source="D:\Penyimpanan Utama\Downloads\Download From Ms.edge\bg-easy-game (1).png" />
+        </object-type>
+        <object-type name="SalinanGameOver" sid="363114724446417">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="302748699501819" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\FOLDER KULIAH\SEMESTER 5\Pemrogrman_Game 1\asset icon\Salinan gameOver.png">
+                        <collision-poly>
+                            <point x="0.0948905" y="0.169271" />
+                            <point x="0.5" y="0.126302" />
+                            <point x="0.917518" y="0.147135" />
+                            <point x="0.856204" y="0.5" />
+                            <point x="0.89854" y="0.81901" />
+                            <point x="0.115328" y="0.794271" />
+                            <point x="0.159124" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Board" sid="388567446472519">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="195802056644526" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ACER\Downloads\Board.png">
+                        <collision-poly>
+                            <point x="0.108421" y="0.143056" />
+                            <point x="0.5" y="0.206944" />
+                            <point x="0.861053" y="0.183333" />
+                            <point x="0.889474" y="0.854167" />
+                            <point x="0.5" y="0.819444" />
+                            <point x="0.128421" y="0.830556" />
+                            <point x="0.136842" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Board3" sid="119070298517493">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="722667320878571" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\ACER\Downloads\Board.png">
+                        <collision-poly>
+                            <point x="0.108421" y="0.143056" />
+                            <point x="0.5" y="0.206944" />
+                            <point x="0.861053" y="0.183333" />
+                            <point x="0.889474" y="0.854167" />
+                            <point x="0.5" y="0.819444" />
+                            <point x="0.128421" y="0.830556" />
+                            <point x="0.136842" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />

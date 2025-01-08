@@ -10,15 +10,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Game_Easy_LO</layout>
-        <layout order="1">Home_LO</layout>
-        <layout order="3">Game_Medium_LO</layout>
-        <layout order="2">Game_Hard_LO</layout>
-        <event-sheet order="6">Game_Easy_ES</event-sheet>
-        <event-sheet order="4">Game_Hard_ES</event-sheet>
-        <event-sheet order="5">Game_Medium_ES</event-sheet>
-        <event-sheet active="1" order="7">Home_ES</event-sheet>
-        <event-sheet order="8">Level_List_ES</event-sheet>
+        <layout order="4">Game_Easy_LO</layout>
+        <layout order="3">Home_LO</layout>
+        <layout order="7">Game_Hard_LO</layout>
+        <layout order="0">Game_Medium_LO</layout>
+        <event-sheet order="2">Game_Hard_ES</event-sheet>
+        <event-sheet active="1" order="1">Game_Medium_ES</event-sheet>
+        <event-sheet order="5">Game_Easy_ES</event-sheet>
+        <event-sheet order="6">Home_ES</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -32,7 +31,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/HomeAsset/" />
         <folder expanded="1" path="object-folder/GameEasyAsset/" />
         <folder expanded="1" path="object-folder/GameMediumAsset/" />
-        <folder expanded="1" path="object-folder/GameHardAsset/" />
+        <folder expanded="0" path="object-folder/GameHardAsset/" />
         <folder expanded="0" path="object-folder/LevelListAsset/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
@@ -82,6 +81,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/TimerBoardMedium/" />
         <folder expanded="1" path="animation-folder/ScoreBoardMedium/" />
         <folder expanded="1" path="animation-folder/PauseButtonMedium/" />
+        <folder expanded="1" path="animation-folder/GameOverMedium/" />
+        <folder expanded="1" path="animation-folder/TbHomeMedium/" />
+        <folder expanded="1" path="animation-folder/TbRestartMedium/" />
+        <folder expanded="1" path="animation-folder/PopUpMedium/" />
         <folder expanded="1" path="animation-folder/ScoreBoardHard/" />
         <folder expanded="1" path="animation-folder/TimerBoardHard/" />
         <folder expanded="1" path="animation-folder/BoxSampahHard/" />
@@ -101,5 +104,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/LevelListHomeButton/" />
         <folder expanded="1" path="animation-folder/TbPlay/" />
         <folder expanded="1" path="animation-folder/GOBoardHard/" />
+        <folder expanded="1" path="animation-folder/SalinanGameOver/" />
+        <folder expanded="1" path="animation-folder/Board/" />
+        <folder expanded="1" path="animation-folder/Board3/" />
     </folders-expanded>
 </c2uistate>
